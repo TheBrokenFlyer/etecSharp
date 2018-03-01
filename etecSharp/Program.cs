@@ -46,12 +46,12 @@ namespace etecSharp
 
             Console.WriteLine(
                 "\n0.>\t"   + txA + "\n\t"      + txB +
-                "\n1.>\t\"" + txA + "\" has "   + txA.Length + " characters.\n\t\"" + txB + "\" has " + txB.Length + " characters." +
+                "\n1.>\t\"" + txA + "\" has "   + txA.Length + " characters.\n\t\"" + txB + "\" has " + txB.Length + " characters."
             );
 
             Console.WriteLine(
-                "\n2.>\t\"" + txA + "\" --> \"" + txA.ToUpper +
-                "\n3.>\t\"" + txA + "\" --> \"" + txA.ToLower
+                "\n2.>\t\"" + txA + "\" --> \"" + txA.ToUpper() +
+                "\n3.>\t\"" + txA + "\" --> \"" + txA.ToLower()
             );
             
             Console.ReadKey(true);
