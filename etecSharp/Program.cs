@@ -9,10 +9,16 @@ namespace etecSharp
     { 
         static void Main(string[] args)
         {
-            
-            fun_A();
-            fun_B();
+            char key=Convert.ToChar(Console.ReadKey());
 
+            switch(key){
+                case 'a':
+                    fun_A();
+                    break;
+                case 'b':
+                    fun_B();
+                    break;
+            }
         }
 
         static void fun_A()
@@ -45,13 +51,13 @@ namespace etecSharp
             txB = Console.ReadLine();
 
             Console.WriteLine(
-                "\n0.>\t"   + txA + "\n\t"      + txB +
-                "\n1.>\t\"" + txA + "\" has "   + txA.Length + " characters.\n\t\"" + txB + "\" has " + txB.Length + " characters."
-            );
+                "\n0.>\t"   + txA + "\n\t"      + txB           +
+                "\n1.>\t\"" + txA + "\" has "   + txA.Length    + " characters.\n\t\"" + txB + "\" has " + txB.Length + " characters." + "\n" +
+            
+                "\n2.>\t\"" + txA + "\" --> \"" + txA.ToUpper() + "\"" +            //convert to upper case lettering
+                "\n3.>\t\"" + txA + "\" --> \"" + txA.ToLower() + "\"" + "\n" +     //convert to lower case lettering
 
-            Console.WriteLine(
-                "\n2.>\t\"" + txA + "\" --> \"" + txA.ToUpper() +
-                "\n3.>\t\"" + txA + "\" --> \"" + txA.ToLower()
+                "\n4.>\t\"" + txA + "\" == \""  + txB           + "\" = " + txA.Equals(txB) //compare strings, check if they are equal
             );
             
             Console.ReadKey(true);
