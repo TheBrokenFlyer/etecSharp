@@ -1,0 +1,4 @@
+C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.exercises\etecSharp.exercises\bin\Debug\etecSharp.exercises.exe
+C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.exercises\etecSharp.exercises\bin\Debug\etecSharp.exercises.pdb
+C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.exercises\etecSharp.exercises\obj\x86\Debug\etecSharp.exercises.exe
+C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.exercises\etecSharp.exercises\obj\x86\Debug\etecSharp.exercises.pdb

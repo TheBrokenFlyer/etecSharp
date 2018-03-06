@@ -5,18 +5,25 @@ using System.Text;
 
 namespace etecSharp
 {
-    class Circle
+    class Examples
     { 
         static void Main(string[] args)
         {
-            char key=Convert.ToChar(Console.ReadKey());
+            Console.Write(  "please select:\n"      +
+                            "   a. circle area\n"   +
+                            "   b. text stuff\n"    );
 
-            switch(key){
+            char key=Convert.ToChar(Console.ReadKey()); //asks for input
+
+            switch(key){        //analize input
                 case 'a':
                     fun_A();
                     break;
                 case 'b':
                     fun_B();
+                    break;
+                default:
+                    
                     break;
             }
         }
@@ -57,7 +64,9 @@ namespace etecSharp
                 "\n2.>\t\"" + txA + "\" --> \"" + txA.ToUpper() + "\"" +            //convert to upper case lettering
                 "\n3.>\t\"" + txA + "\" --> \"" + txA.ToLower() + "\"" + "\n" +     //convert to lower case lettering
 
-                "\n4.>\t\"" + txA + "\" == \""  + txB           + "\" = " + txA.Equals(txB) //compare strings, check if they are equal
+                "\n4.>\t\"" + txA + "\" == \""  + txB           + "\" = " + txA.Equals(txB) + //compare strings, check if they are equal
+
+                "\n5.>\t\"" + txA+txB + "\" -> 6 characters -> \"" + (txA+txB).Substring(6,6)
             );
             
             Console.ReadKey(true);
