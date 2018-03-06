@@ -97,9 +97,22 @@ namespace ConsoleApplication1 {
         }
 
         static void ex5() {
+            Console.Write("\ninsert an age:     ");
+            int x = int.Parse(Console.ReadLine());
+            if (x < 18)
+            {
+                Console.WriteLine("less than 18.");
+            }
+            else
+            {
+                Console.WriteLine("equals or more than 18.");
+            }
         }
 
         static void ex6() {
+            Console.Write("\ninsert a R$:       ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write(
         }
     }
 }
