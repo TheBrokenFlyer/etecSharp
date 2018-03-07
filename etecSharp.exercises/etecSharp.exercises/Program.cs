@@ -22,18 +22,19 @@ namespace ConsoleApplication1 {
                             "\n" +
                             "input:> ");
 
-            while (i) { //asks for input
+            while (i) { //asks for input while "input" is null or invalid
+
+
+                key = Console.ReadKey(); //prompts imput
                 
+                char input = key.KeyChar; //gets the character from "key", inserts into the char "input"
 
-                key = Console.ReadKey();
-                char input = key.KeyChar;
-
-                switch (input) {
+                switch (input) { //compares "input" with different options
                     case '1':
                         ex1();
                         i = false;
                         break;
-                    case '2':
+                    case '2':       //if '2' is pressed, execute function 2 [...]
                         ex2();
                         i = false;
                         break;
@@ -54,11 +55,12 @@ namespace ConsoleApplication1 {
                         i = false;
                         break;
                     default:
-                        Console.Write(" - invalid.\ninput:> ");
+                        Console.Write(" - invalid.\ninput:> "); //if the input is invalid, ask again
                         break;
                 };
             };
 
+            //end
             Console.ReadKey(true);
         }
 

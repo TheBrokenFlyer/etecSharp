@@ -9,26 +9,40 @@ namespace etecSharp
     { 
         static void Main(string[] args)
         {
+            ConsoleKeyInfo key;
+            bool i = false;
+
             Console.Write(  "please select:\n"      +
                             "   a. circle area\n"   +
                             "   b. text stuff\n"    );
+            
+            while (!i) { //asks for input while "input" is null or invalid
 
-            char key=Convert.ToChar(Console.ReadKey()); //asks for input
 
-            switch(key){        //analize input
-                case 'a':
-                    fun_A();
-                    break;
-                case 'b':
-                    fun_B();
-                    break;
-                default:
+                key = Console.ReadKey(); //prompts imput
+                
+                char input = key.KeyChar; //gets the character from "key", inserts into the char "input"
+
+                switch (input) { //compares "input" with different options
+
+                    case '1':
+                        fun_1();
+                        i = false;
+                        break;
+
+                    case '2':       //if '2' is pressed, execute function 2 [...]
+                        fun_2();
+                        i = false;
+                        break;
                     
-                    break;
-            }
+                    default:
+                        Console.Write(" - invalid.\ninput:> "); //if the input is invalid, ask again
+                        break;
+                };
+            };
         }
 
-        static void fun_A()
+        static void fun_1()
         {
             Console.WriteLine("\n\ncircle area calc.:\n");
             double radius = 0;
@@ -46,7 +60,7 @@ namespace etecSharp
             Console.ReadKey(true);
         }
 
-        static void fun_B()
+        static void fun_2()
         {
             Console.WriteLine("\n\nname var stuff.:\n");
 
