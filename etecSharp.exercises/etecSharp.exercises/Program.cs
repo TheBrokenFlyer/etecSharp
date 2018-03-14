@@ -20,6 +20,8 @@ namespace ConsoleApplication1 {
                             "   5. isAboveEighteen\n" +
                             "   6. convert to US Dollars\n" +
                             "\n" +
+                            "   7. classes and stuff" + 
+                            "\n\n" +
                             "input:> ");
 
             while (i) { //asks for input while "input" is null or invalid
@@ -54,6 +56,14 @@ namespace ConsoleApplication1 {
                         ex6();
                         i = false;
                         break;
+                    case '7':
+                        ex7();
+                        i = false;
+                        break;
+                    case '8':
+                        ex8();
+                        i = false;
+                        break;
                     default:
                         Console.Write(" - invalid.\ninput:> "); //if the input is invalid, ask again
                         break;
@@ -64,6 +74,7 @@ namespace ConsoleApplication1 {
             Console.ReadKey(true);
         }
 
+        //read and write
         static void ex1() {
             Console.Write("\n\n\tinsert name:\t");
             string name = Console.ReadLine();
@@ -80,6 +91,7 @@ namespace ConsoleApplication1 {
             );
         }
 
+        //double the number
         static void ex2() {
             Console.Write("\ninsert a number:   ");
             int x = int.Parse(Console.ReadLine());
@@ -87,6 +99,7 @@ namespace ConsoleApplication1 {
             Console.ReadKey(true);
         }
 
+        //square number
         static void ex3() {
             Console.Write("\n\n\tinsert a number:   ");
             int x = int.Parse(Console.ReadLine());
@@ -94,6 +107,7 @@ namespace ConsoleApplication1 {
             Console.ReadKey(true);
         }
 
+        //some equation stuff
         static void ex4() {
             Console.Write("\n\n\tinsert A:  ");
             double A = int.Parse(Console.ReadLine());
@@ -106,23 +120,93 @@ namespace ConsoleApplication1 {
             Console.Write("\n\tthe result is {0:N2}", res);
         }
 
+        //check if >18
         static void ex5() {
             Console.Write("\n\n\tinsert an age:     ");
             int x = int.Parse(Console.ReadLine());
-            if (x < 18)
-            {
+            if (x < 18) {
                 Console.WriteLine("\tless than 18.");
-            }
-            else
-            {
+            } else {
                 Console.WriteLine("\tequals or more than 18.");
             }
         }
 
+        //conversion of dollars
         static void ex6() {
             Console.Write("\n\n\tinsert a R$:       ");
             float x = float.Parse(Console.ReadLine());
-            Console.Write("\tR$ {0:N2} --> US$ {1:N2}", x, x/3.25);
+            Console.Write("\tR$ {0:N2} --> US$ {1:N2}", x, x / 3.25);
+        }
+
+
+        //Classes and methods
+        static void ex7() {
+            Console.Write("\n\n\t");
+
+            HerancasPessoas.Pessoa person1      = new HerancasPessoas.Pessoa();
+            HerancasPessoas.Aluno person2       = new HerancasPessoas.Aluno();
+            HerancasPessoas.Funcionario person3 = new HerancasPessoas.Funcionario();
+            HerancasPessoas.Professor person4   = new HerancasPessoas.Professor();
+
+            person1.setAge(19);
+            person1.setGender('F');
+            person1.setName("Someone");
+
+            Console.Write(  "person1.age:     {0}\n\t" +
+                            "person1.gender:  {1}\n\t" +
+                            "person1.name:    {2}\n\t" ,
+                            person1.getAge(),
+                            person1.getGender(),
+                            person1.getName());
+
+        }
+
+        //exercise about classes and other stuff
+        static void ex8() {
+            Console.Write("\n\n\t");
+
+            HerancasAnimais.Animal  animal1 = new HerancasAnimais.Animal();
+            HerancasAnimais.Mammal  animal2 = new HerancasAnimais.Mammal();
+            HerancasAnimais.Bird    animal3 = new HerancasAnimais.Bird();
+            HerancasAnimais.Reptile animal4 = new HerancasAnimais.Reptile();
+
+            animal1.setAge(5);
+            animal1.setMembers(8);
+            animal1.setWeight(5.500f);
+
+            animal2.setAge(14);
+            animal2.setMembers(4);
+            animal2.setWeight(25.500f);
+            animal2.setFurColor("white");
+
+            Console.Write(  "animal1.age:     {0}\n\t" +
+                            "animal1.members: {1}\n\t" +
+                            "animal1.weight:  {2}\n\t" +
+                            "\n\n" ,
+                            animal1.getAge(),
+                            animal1.getMembers(),
+                            animal1.getWeight());
+            
+            animal1.move();
+            animal1.eat();
+            animal1.emitSound();
+
+            Console.Write("\n\n\n\t");
+            Console.Write(  "animal2.age:     {0}\n\t" +
+                            "animal2.members: {1}\n\t" +
+                            "animal2.weight:  {2}\n\t" +
+                            "animal2.furColor:{3}\n\t" +
+                            "\n\n",
+                            animal2.getAge(),
+                            animal2.getMembers(),
+                            animal2.getWeight(),
+                            animal2.getFurColor());
+
+            animal2.move();
+            animal2.eat();
+            animal2.emitSound();
+
+            //[...]
         }
     }
 }
