@@ -20,8 +20,10 @@ namespace ConsoleApplication1 {
                             "   5. isAboveEighteen\n" +
                             "   6. convert to US Dollars\n" +
                             "\n" +
-                            "   7. classes and stuff" + 
-                            "\n\n" +
+                            "   7. classes and stuff\n" + 
+                            "   8. classes and methods 2\n" +
+                            "   9. another one\n" +
+                            "\n" +
                             "input:> ");
 
             while (i) { //asks for input while "input" is null or invalid
@@ -62,6 +64,10 @@ namespace ConsoleApplication1 {
                         break;
                     case '8':
                         ex8();
+                        i = false;
+                        break;
+                    case '9':
+                        ex9();
                         i = false;
                         break;
                     default:
@@ -161,7 +167,7 @@ namespace ConsoleApplication1 {
 
         }
 
-        //exercise about classes and other stuff
+        //Classes and methods 2
         static void ex8() {
             Console.Write("\n\n\t");
 
@@ -207,6 +213,86 @@ namespace ConsoleApplication1 {
             animal2.emitSound();
 
             //[...]
+        }
+
+        //Another one.
+        static void ex9() {
+            Console.Write("\n\n\t");
+
+            HerancasEmpregados.Empregado empregado1     = new HerancasEmpregados.Empregado();
+            HerancasEmpregados.Assalariado empregado2   = new HerancasEmpregados.Assalariado();
+            HerancasEmpregados.Commissionado empregado3 = new HerancasEmpregados.Commissionado();
+            HerancasEmpregados.Horista empregado4       = new HerancasEmpregados.Horista();
+
+            empregado1.setName("dummyOne");
+            empregado1.setLastName("dummiski");
+            empregado1.setDocument(1233211233);
+
+            Console.Write("\n\t");
+            Console.Write(  "empregado1.nome:       {0}\n\t" +
+                            "empregado1.sobrenome:  {1}\n\t" +
+                            "empregado1.documento:  {2}\n\t" +
+                            "\n\n",
+                            empregado1.getName(),
+                            empregado1.getLastName(),
+                            empregado1.getDocument()
+                            );
+
+            empregado1.vencimento();
+
+
+            empregado2.setName("dummyToo");
+            empregado2.setLastName("asdfa");
+            empregado2.setDocument(321654894);
+            empregado2.setSalario(300);
+
+            Console.Write("\n\t");
+            Console.Write(  "empregado2.nome:       {0}\n\t" +
+                            "empregado2.sobrenome:  {1}\n\t" +
+                            "empregado2.documento:  {2}\n\t" +
+                            "empregado2.salario:    {2}\n\t" +
+                            "\n\n",
+                            empregado2.getName(),
+                            empregado2.getLastName(),
+                            empregado2.getDocument(),
+                            empregado2.getSalario()
+                            );
+
+            empregado2.vencimento();
+
+
+            empregado3.setName("dummyTeww");
+            empregado3.setLastName("fdsafdsafdsafdsafdsafdsafdsafdsafdsafdsa");
+            empregado3.setDocument(654656544);
+            empregado3.setTotalVenda(998900);
+            empregado3.setTaxaComissao(10);
+
+            Console.Write("\n\t");
+            Console.Write(  "empregado3.nome:           {0}\n\t" +
+                            "empregado3.sobrenome:      {1}\n\t" +
+                            "empregado3.documento:      {2}\n\t" +
+                            "empregado3.totalVenda:     {3}\n\t" +
+                            "empregado3.taxaComissao:   {4}\n\t" +
+                            "\n\n",
+                            empregado3.getName(),
+                            empregado3.getLastName(),
+                            empregado3.getDocument(),
+                            empregado3.getTotalVenda(),
+                            empregado3.getTaxaComissao()
+                            );
+
+            empregado3.vencimento();
+
+
+            empregado4.setName("dummyFour");
+            empregado4.setLastName("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+            empregado4.setDocument(44444444444);
+            empregado4.setPrecoHora(12);
+            empregado4.setHorasTrabalhadas(3595);
+
+            Console.Write("\n\t");
+            Console.Write(  "\n\t");
+
         }
     }
 }

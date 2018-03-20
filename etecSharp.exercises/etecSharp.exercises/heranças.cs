@@ -233,3 +233,112 @@ namespace HerancasAnimais {
         }
     }
 }
+
+/*
+ * ----------EMPLOYEES----------
+ */
+namespace HerancasEmpregados {
+    class Empregado {
+        private string  name = null,
+                        lastName = null;
+        private int     document = 0;
+
+        public virtual double vencimento() { return 0; }
+
+        /* GET */
+        public string getName() {
+            return this.name;
+        }
+
+        public string getLastName() {
+            return this.lastName;
+        }
+
+        public int getDocument() {
+            return this.document;
+        }
+
+        /* SET */
+        public string setName(string args) {
+            return this.name = args;
+        }
+
+        public string setLastName(string args) {
+            return this.lastName = args;
+        }
+
+        public int setDocument(int args) {
+            return this.document = args;
+        }
+    }
+
+    class Assalariado : Empregado {
+        private double salario = 0;
+        /*
+        public override double vencimento(double args) {
+            salario += args;
+            Console.WriteLine("\n\t" + this + "recebeu " + args + ".\n\tatual: " + salario);
+            return salario;
+        }*/
+
+        /* GET */
+        public double getSalario() {
+            return this.salario;
+        }
+
+        /* SET */
+        public double setSalario(double args) {
+            return this.salario = args;
+        }
+    }
+
+    class Commissionado : Empregado {
+        private double  totalVenda = 0,
+                        taxaComissao = 0;
+
+        public override double vencimento() { return 0; }
+
+        /* GET */
+        public double getTotalVenda() {
+            return this.totalVenda;
+        }
+
+        public double getTaxaComissao() {
+            return this.taxaComissao;
+        }
+
+        /* SET */
+        public double setTotalVenda(double args) {
+            return this.totalVenda = args;
+        }
+
+        public double setTaxaComissao(double args) {
+            return this.taxaComissao = args;
+        }
+    }
+
+    class Horista : Empregado {
+        private double  precoHora = 0,
+                        horasTrabalhadas = 0;
+
+        public override double vencimento() { return 0; }
+
+        /* GET */
+        public double getPrecoHora() {
+            return this.precoHora;
+        }
+
+        public double getHorasTrabalhadas() {
+            return this.horasTrabalhadas;
+        }
+
+        /* SET */
+        public double setPrecoHora(double args) {
+            return this.precoHora = args;
+        }
+
+        public double setHorasTrabalhadas(double args) {
+            return this.horasTrabalhadas = args;
+        }
+    }
+}
