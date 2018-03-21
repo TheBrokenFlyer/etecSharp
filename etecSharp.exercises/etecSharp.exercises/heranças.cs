@@ -274,12 +274,11 @@ namespace HerancasEmpregados {
 
     class Assalariado : Empregado {
         private double salario = 0;
-        /*
-        public override double vencimento(double args) {
-            salario += args;
-            Console.WriteLine("\n\t" + this + "recebeu " + args + ".\n\tatual: " + salario);
-            return salario;
-        }*/
+        
+        public override double vencimento() {
+            Console.WriteLine("\n\t" + this + " recebeu 300.\n\tatual: " + salario);
+            return salario+=300;
+        }
 
         /* GET */
         public double getSalario() {

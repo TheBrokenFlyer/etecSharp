@@ -250,14 +250,15 @@ namespace ConsoleApplication1 {
             Console.Write(  "empregado2.nome:       {0}\n\t" +
                             "empregado2.sobrenome:  {1}\n\t" +
                             "empregado2.documento:  {2}\n\t" +
-                            "empregado2.salario:    {2}\n\t" +
-                            "\n\n",
+                            "empregado2.salario:    {2}\n\t",
                             empregado2.getName(),
                             empregado2.getLastName(),
                             empregado2.getDocument(),
                             empregado2.getSalario()
                             );
 
+            empregado2.vencimento();
+            empregado2.vencimento();
             empregado2.vencimento();
 
 
@@ -267,7 +268,7 @@ namespace ConsoleApplication1 {
             empregado3.setTotalVenda(998900);
             empregado3.setTaxaComissao(10);
 
-            Console.Write("\n\t");
+            Console.Write("\n\n\n\t");
             Console.Write(  "empregado3.nome:           {0}\n\t" +
                             "empregado3.sobrenome:      {1}\n\t" +
                             "empregado3.documento:      {2}\n\t" +
