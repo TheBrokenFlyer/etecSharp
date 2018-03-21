@@ -286,12 +286,22 @@ namespace ConsoleApplication1 {
 
             empregado4.setName("dummyFour");
             empregado4.setLastName("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-            empregado4.setDocument(44444444444);
+            empregado4.setDocument(444444444);
             empregado4.setPrecoHora(12);
             empregado4.setHorasTrabalhadas(3595);
 
             Console.Write("\n\t");
-            Console.Write(  "\n\t");
+            Console.Write(  "empregado4.nome:               {0}\n\t" +
+                            "empregado4.sobrenome:          {1}\n\t" +
+                            "empregado4.documento:          {2}\n\t" +
+                            "empregado4.precoHora:          {3}\n\t" +
+                            "empregado4.horasTrabalhadas:   {4}\n\t",
+                            empregado4.getName(),
+                            empregado4.getLastName(),
+                            empregado4.getDocument(),
+                            empregado4.getPrecoHora(),
+                            empregado4.getHorasTrabalhadas()
+                            );
 
         }
     }
