@@ -203,6 +203,15 @@ namespace HerancasAnimais {
         }
     }
 
+    class Kangaroo : Mammal {
+        //fdsfdsafdsafdsfdsafdsafdsa move and "use bag"?
+    }
+
+    class Dog : Mammal {
+        public void burryBone() { }
+        public void wagTail() { }
+    }
+
     class Reptile:Animal {
         private string scalesColor = null;
 
@@ -213,6 +222,10 @@ namespace HerancasAnimais {
         public string getScalesColor(string args) {
             return this.scalesColor;
         }
+    }
+
+    class Turtle : Reptile {
+        public void move() { }
     }
 
     class Bird:Animal {
@@ -232,6 +245,8 @@ namespace HerancasAnimais {
             return this.featherColor;
         }
     }
+
+    class Tucan : Mammal { }
 }
 
 /*
