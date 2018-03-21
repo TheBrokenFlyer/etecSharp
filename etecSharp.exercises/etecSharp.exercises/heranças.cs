@@ -151,7 +151,7 @@ namespace HerancasAnimais {
                     members  = 4;
 
         /* GET */
-        public void move() {
+        public virtual void move() {
             Console.WriteLine("\tit moved.");
         }
 
@@ -203,11 +203,12 @@ namespace HerancasAnimais {
         }
     }
 
-    class Kangaroo : Mammal {
-        //fdsfdsafdsafdsfdsafdsafdsa move and "use bag"?
+    class Kangaroo:Mammal {
+        public override void move() { }
+        public void useBag() { }
     }
 
-    class Dog : Mammal {
+    class Dog:Mammal {
         public void burryBone() { }
         public void wagTail() { }
     }
@@ -224,8 +225,8 @@ namespace HerancasAnimais {
         }
     }
 
-    class Turtle : Reptile {
-        public void move() { }
+    class Turtle:Reptile {
+        public override void move() { }
     }
 
     class Bird:Animal {
@@ -246,7 +247,7 @@ namespace HerancasAnimais {
         }
     }
 
-    class Tucan : Mammal { }
+    class Tucan:Bird { }
 }
 
 /*

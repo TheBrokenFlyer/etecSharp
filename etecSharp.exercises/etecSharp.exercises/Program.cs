@@ -109,7 +109,7 @@ namespace ConsoleApplication1 {
         static void ex3() {
             Console.Write("\n\n\tinsert a number:   ");
             int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("\n\t" + x + " * 2 = " + Math.Pow(x,2));
+            Console.Write("\n\t" + x + " * " + x + " = " + Math.Pow(x,2));
             Console.ReadKey(true);
         }
 
