@@ -276,8 +276,8 @@ namespace HerancasEmpregados {
         private double salario = 0;
         
         public override double vencimento() {
-            Console.WriteLine("\n\t" + this + " recebeu 300.\n\tatual: " + salario);
-            return salario+=300;
+            Console.WriteLine("\n\t" + this + " recebeu 300.\n\tatual: " + getSalario());
+            return this.salario+=300;
         }
 
         /* GET */
