@@ -211,6 +211,51 @@ namespace HerancasAnimais {
     class Dog:Mammal {
         public void burryBone() { }
         public void wagTail() { }
+        public void gowl() { }
+        public void bark() { }
+        public void play() { }
+        
+        
+         //multiple methods can have the same name,
+        //but they must have a different set of parameters and/or return types.
+        public void react(string attitude)  {
+
+	        if (attitude.Equals("play") | attitude.Equals("pet")) {
+                wagTail();
+	        } else {
+                gowl();
+            }
+
+        }
+
+	    public void react(int hour, int min){
+
+	        if (hour < 12) {
+                wagTail();
+                bark();
+
+	        } else if(hour >= 18) {
+		        //ignore
+
+            } else {
+                wagTail();
+
+            }
+
+        }
+        
+	    public void react(bool owner){
+            
+            if (owner) {
+                wagTail();
+                play();
+
+            } else {
+                gowl();
+
+            }
+
+        }
     }
 
     class Reptile:Animal {
