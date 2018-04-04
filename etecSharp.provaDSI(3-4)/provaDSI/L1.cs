@@ -6,23 +6,30 @@ using System.Text;
 namespace prova {
     class Program {
         static void Main(string[] args) {
-            Fusca.locomover();
-            Fusca.abastecer();
+            Fusca       F = new Fusca();
+            PicapeS10   P = new PicapeS10();
+            Cb200       C = new Cb200();
+            Caiaque     CH = new Caiaque();
+            Esquilo     E = new Esquilo();
+            Legacy450   L = new Legacy450();
+            
+            F.locomover();
+            F.abastecer();
 
-            PicapeS10.locomover();
-            PicapeS10.abastecer();
+            P.locomover();
+            P.abastecer();
 
-            Cb200.locomover();
-            Cb200.abastecer();
+            C.locomover();
+            C.abastecer();
 
-            Caiaque.locomover();
-            Caiaque.abastecer();
+            CH.locomover();
+            CH.abastecer();
 
-            Esquilo.locomover();
-            Esquilo.abastecer();
+            E.locomover();
+            E.abastecer();
 
-            Legacy450.locomover();
-            Legacy450.abastecer();
+            L.locomover();
+            L.abastecer();
 
             Console.ReadKey(true);
         }
@@ -34,8 +41,8 @@ namespace prova {
         private int ano = 0,
                     pneu = 0;
 
-        public static virtual void locomover() { }
-        public static virtual void abastecer() { }
+        public virtual void locomover() { }
+        public virtual void abastecer() { }
     }
 
 
