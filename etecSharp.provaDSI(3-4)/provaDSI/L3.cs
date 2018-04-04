@@ -2,21 +2,21 @@
 
 namespace prova {
     class Fusca : Carro {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("two wheels");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("gasoline\n");
         }
     }
 
     class PicapeS10 : Carro {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("four wheels");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("diesel\n");
         }
     }
@@ -24,11 +24,11 @@ namespace prova {
 
 
     class Cb200 : Motocicleta {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("back wheels");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("alcohol\n");
         }
     }
@@ -36,11 +36,11 @@ namespace prova {
 
 
     class Caiaque : Embarcacao {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("howing");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("body strenght\n");
         }
     }
@@ -48,26 +48,26 @@ namespace prova {
 
 
     class Esquilo : Aeronave {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("rotor");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("diesel\n");
         }
     }
 
     class Legacy450 : Aeronave {
-        public static override void locomover() {
+        public override void locomover() {
             Console.WriteLine("turbine");
         }
 
-        public static override void abastecer() {
+        public override void abastecer() {
             Console.WriteLine("kerozene\n");
         }
 
 
-        public static void decolar(int climate) {
+        public void decolar(int climate) {
             switch (climate) {
                 case 0: //sun
                     Console.WriteLine("regular");
@@ -85,7 +85,7 @@ namespace prova {
             }
         }
 
-        public static int decolar(int hour) {
+        public int decolar(float hour) {
             int altitude=0;
 
             if (hour < 100) {
@@ -102,7 +102,7 @@ namespace prova {
             return altitude;
         }
 
-        public static int decolar(bool areTherePassengers) {
+        public int decolar(bool areTherePassengers) {
             if (areTherePassengers) {
                 Console.WriteLine("make lunch");
                 return 1;

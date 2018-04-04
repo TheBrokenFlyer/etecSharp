@@ -6,7 +6,23 @@ using System.Text;
 namespace prova {
     class Program {
         static void Main(string[] args) {
+            Fusca.locomover();
+            Fusca.abastecer();
 
+            PicapeS10.locomover();
+            PicapeS10.abastecer();
+
+            Cb200.locomover();
+            Cb200.abastecer();
+
+            Caiaque.locomover();
+            Caiaque.abastecer();
+
+            Esquilo.locomover();
+            Esquilo.abastecer();
+
+            Legacy450.locomover();
+            Legacy450.abastecer();
 
             Console.ReadKey(true);
         }
@@ -18,8 +34,8 @@ namespace prova {
         private int ano = 0,
                     pneu = 0;
 
-        public virtual void locomover() { }
-        public virtual void abastecer() { }
+        public static virtual void locomover() { }
+        public static virtual void abastecer() { }
     }
 
 
