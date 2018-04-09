@@ -85,17 +85,17 @@ namespace prova {
             }
         }
 
-        public int decolar(float hour) {
-            int altitude=0;
+        public float decolar(float hour) {
+            float altitude=0;
 
-            if (hour < 100) {
-                altitude = 5000; //low
-            } else if (hour < 1201) {
-                altitude = 10000; //high
-            } else if (hour < 1801) {
-                altitude = 7500; //medium
-            } else if (hour < 2359) {
-                altitude = 5000; //low
+            if (hour < 100f) {
+                altitude = 5000f; //low
+            } else if (hour < 1201f) {
+                altitude = 10000f; //high
+            } else if (hour < 1801f) {
+                altitude = 7500f; //medium
+            } else if (hour < 2359f) {
+                altitude = 5000f; //low
             }
 
             Console.WriteLine("altitude: " + altitude);

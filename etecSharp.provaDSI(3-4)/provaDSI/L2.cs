@@ -16,6 +16,6 @@
     class Aeronave      : Veiculo {
         private string corFuselagem = null;
 
-        public void arremeter();
+        public void arremeter() {}
     }
 }

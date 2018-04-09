@@ -30,6 +30,13 @@ namespace prova {
 
             L.locomover();
             L.abastecer();
+            L.decolar(0);
+            L.decolar(1);
+            L.decolar(2);
+            L.decolar(1231232);
+            L.decolar(2200f);
+            L.decolar(true);
+            L.decolar(false);
 
             Console.ReadKey(true);
         }

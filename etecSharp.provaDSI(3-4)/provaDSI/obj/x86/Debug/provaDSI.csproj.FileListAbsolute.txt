@@ -1,1 +1,4 @@
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI\bin\Debug\provaDSI.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI\bin\Debug\provaDSI.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI\obj\x86\Debug\provaDSI.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI\obj\x86\Debug\provaDSI.pdb
