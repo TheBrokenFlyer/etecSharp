@@ -11,11 +11,10 @@ namespace ConsoleApplication1 {
             Horista h = new Horista();
 
             Console.WriteLine("assalariado\n\t{0}\n\t{1}\n\t{2}", a.atraso(30f), a.atraso("aaaaaaa"), a.atraso(true));
+            
             Console.WriteLine("vencimento " + a.vencimento());
-
-            Console.WriteLine(c.vencimento());
-
-            Console.WriteLine(h.vencimento());
+            Console.WriteLine("vencimento " + c.vencimento());
+            Console.WriteLine("vencimento " + h.vencimento());
 
             Console.WriteLine("\nAssalariado " + a.setNome("\nname here"));
             Console.WriteLine("\nComissionado " + c.setNome("\nname here2"));
@@ -51,7 +50,7 @@ namespace ConsoleApplication1 {
         }
 
         public float atraso(float a) {
-            return a;
+            return this.salario=(a-(a/10));
         }
         public string atraso(string a) {
             return a;
