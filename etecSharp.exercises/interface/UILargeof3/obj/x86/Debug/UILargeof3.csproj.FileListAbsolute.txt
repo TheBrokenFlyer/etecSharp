@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\bin\Debug\UIAverage3.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\bin\Debug\UIAverage3.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\WindowsFormsApplication1.UILargeof3.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\UIAverage3.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UILargeof3\obj\x86\Debug\UIAverage3.pdb
