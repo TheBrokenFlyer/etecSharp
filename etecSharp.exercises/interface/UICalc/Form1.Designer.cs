@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class UICalc
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@
             this.lblOutput.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblOutput.AutoSize = true;
             this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutput.Location = new System.Drawing.Point(94, 140);
+            this.lblOutput.Location = new System.Drawing.Point(104, 145);
             this.lblOutput.Name = "lblOutput";
             this.lblOutput.Size = new System.Drawing.Size(82, 20);
             this.lblOutput.TabIndex = 6;
@@ -55,7 +55,7 @@
             // txtVal2
             // 
             this.txtVal2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVal2.Location = new System.Drawing.Point(56, 40);
+            this.txtVal2.Location = new System.Drawing.Point(66, 45);
             this.txtVal2.Name = "txtVal2";
             this.txtVal2.Size = new System.Drawing.Size(152, 20);
             this.txtVal2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // txtVal1
             // 
             this.txtVal1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVal1.Location = new System.Drawing.Point(56, 14);
+            this.txtVal1.Location = new System.Drawing.Point(66, 19);
             this.txtVal1.Name = "txtVal1";
             this.txtVal1.Size = new System.Drawing.Size(152, 20);
             this.txtVal1.TabIndex = 0;
@@ -78,9 +78,9 @@
             // 
             this.statMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statFuncType});
-            this.statMain.Location = new System.Drawing.Point(0, 181);
+            this.statMain.Location = new System.Drawing.Point(0, 190);
             this.statMain.Name = "statMain";
-            this.statMain.Size = new System.Drawing.Size(265, 22);
+            this.statMain.Size = new System.Drawing.Size(284, 22);
             this.statMain.SizingGrip = false;
             this.statMain.TabIndex = 7;
             this.statMain.Text = "statusStrip1";
@@ -95,7 +95,7 @@
             // 
             this.btnSum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSum.Location = new System.Drawing.Point(56, 67);
+            this.btnSum.Location = new System.Drawing.Point(66, 72);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(32, 32);
             this.btnSum.TabIndex = 2;
@@ -108,7 +108,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(96, 67);
+            this.button1.Location = new System.Drawing.Point(106, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(32, 32);
             this.button1.TabIndex = 3;
@@ -121,7 +121,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(136, 67);
+            this.button2.Location = new System.Drawing.Point(146, 72);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.button2.Size = new System.Drawing.Size(32, 32);
@@ -135,7 +135,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(176, 67);
+            this.button3.Location = new System.Drawing.Point(186, 72);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 32);
             this.button3.TabIndex = 5;
@@ -144,11 +144,11 @@
             this.button3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.setDiv);
             this.button3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.updateOutput);
             // 
-            // Form1
+            // UICalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 203);
+            this.ClientSize = new System.Drawing.Size(284, 212);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -157,8 +157,10 @@
             this.Controls.Add(this.txtVal1);
             this.Controls.Add(this.txtVal2);
             this.Controls.Add(this.lblOutput);
-            this.Name = "Form1";
-            this.Text = "1";
+            this.MaximizeBox = false;
+            this.Name = "UICalc";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "Basic calculator";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.setSum);
             this.statMain.ResumeLayout(false);
             this.statMain.PerformLayout();

@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class UICalc : Form
     {
 
         private char funcType = '+';
 
-        public Form1() {
+        public UICalc() {
             InitializeComponent();
             statFuncType.Text = string.Format("Function type: '{0}'", funcType);
         }
