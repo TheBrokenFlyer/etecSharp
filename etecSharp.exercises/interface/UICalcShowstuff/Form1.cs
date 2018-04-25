@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq.Expressions;
 
 namespace WindowsFormsApplication1 {
     public partial class UICalcShowstuff : Form {
@@ -13,16 +14,12 @@ namespace WindowsFormsApplication1 {
             InitializeComponent();
         }
 
+        Expression outExpression = new Expression();
 
-        private double aa() {
-            //TO BE CONTINUED
-            return System.Convert.ToDouble("1+1");
+        private void btnEql_Click(object sender, EventArgs e)
+        {
+            //TOBECONTINUED
         }
 
-        private void textBox1_MouseDown(object sender, MouseEventArgs e) {
-            textBox1.Text = aa() + "";
-        }
-
-        
     }
 }
