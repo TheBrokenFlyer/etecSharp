@@ -39,6 +39,9 @@
             this.btnMul = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnEql = new System.Windows.Forms.Button();
+            this.btnOp = new System.Windows.Forms.Button();
+            this.btnCl = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn7
@@ -49,16 +52,18 @@
             this.btn7.TabIndex = 0;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
-            this.btn7.Click += new System.EventHandler(this.click7);
+            this.btn7.Click += new System.EventHandler(this.writeButton);
             // 
             // txtOut
             // 
+            this.txtOut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOut.BackColor = System.Drawing.SystemColors.Window;
             this.txtOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOut.Location = new System.Drawing.Point(12, 12);
             this.txtOut.Name = "txtOut";
             this.txtOut.ReadOnly = true;
-            this.txtOut.Size = new System.Drawing.Size(160, 44);
+            this.txtOut.Size = new System.Drawing.Size(233, 44);
             this.txtOut.TabIndex = 1;
             this.txtOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -70,7 +75,7 @@
             this.btn8.TabIndex = 2;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.click8);
+            this.btn8.Click += new System.EventHandler(this.writeButton);
             // 
             // btn9
             // 
@@ -80,7 +85,7 @@
             this.btn9.TabIndex = 3;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.click9);
+            this.btn9.Click += new System.EventHandler(this.writeButton);
             // 
             // btn4
             // 
@@ -90,7 +95,7 @@
             this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.click4);
+            this.btn4.Click += new System.EventHandler(this.writeButton);
             // 
             // btn5
             // 
@@ -100,7 +105,7 @@
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
-            this.btn5.Click += new System.EventHandler(this.click5);
+            this.btn5.Click += new System.EventHandler(this.writeButton);
             // 
             // btn6
             // 
@@ -110,7 +115,7 @@
             this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
-            this.btn6.Click += new System.EventHandler(this.click6);
+            this.btn6.Click += new System.EventHandler(this.writeButton);
             // 
             // btn1
             // 
@@ -120,7 +125,7 @@
             this.btn1.TabIndex = 7;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.click1);
+            this.btn1.Click += new System.EventHandler(this.writeButton);
             // 
             // btn2
             // 
@@ -130,7 +135,7 @@
             this.btn2.TabIndex = 8;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.click2);
+            this.btn2.Click += new System.EventHandler(this.writeButton);
             // 
             // btn3
             // 
@@ -140,7 +145,7 @@
             this.btn3.TabIndex = 9;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.click3);
+            this.btn3.Click += new System.EventHandler(this.writeButton);
             // 
             // btn0
             // 
@@ -150,47 +155,51 @@
             this.btn0.TabIndex = 10;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.click0);
+            this.btn0.Click += new System.EventHandler(this.writeButton);
             // 
             // btnSum
             // 
-            this.btnSum.Location = new System.Drawing.Point(137, 62);
+            this.btnSum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSum.Location = new System.Drawing.Point(171, 62);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(35, 32);
             this.btnSum.TabIndex = 11;
             this.btnSum.Text = "+";
             this.btnSum.UseVisualStyleBackColor = true;
-            this.btnSum.Click += new System.EventHandler(this.clickSum);
+            this.btnSum.Click += new System.EventHandler(this.writeButton);
             // 
             // btnSub
             // 
-            this.btnSub.Location = new System.Drawing.Point(137, 100);
+            this.btnSub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSub.Location = new System.Drawing.Point(212, 62);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(35, 32);
             this.btnSub.TabIndex = 12;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
-            this.btnSub.Click += new System.EventHandler(this.clickSub);
+            this.btnSub.Click += new System.EventHandler(this.writeButton);
             // 
             // btnMul
             // 
-            this.btnMul.Location = new System.Drawing.Point(137, 138);
+            this.btnMul.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMul.Location = new System.Drawing.Point(171, 100);
             this.btnMul.Name = "btnMul";
             this.btnMul.Size = new System.Drawing.Size(35, 32);
             this.btnMul.TabIndex = 13;
             this.btnMul.Text = "*";
             this.btnMul.UseVisualStyleBackColor = true;
-            this.btnMul.Click += new System.EventHandler(this.clickMul);
+            this.btnMul.Click += new System.EventHandler(this.writeButton);
             // 
             // btnDiv
             // 
-            this.btnDiv.Location = new System.Drawing.Point(137, 176);
+            this.btnDiv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDiv.Location = new System.Drawing.Point(210, 100);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(35, 32);
             this.btnDiv.TabIndex = 14;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.clickDiv);
+            this.btnDiv.Click += new System.EventHandler(this.writeButton);
             // 
             // btnEql
             // 
@@ -202,11 +211,47 @@
             this.btnEql.UseVisualStyleBackColor = true;
             this.btnEql.Click += new System.EventHandler(this.btnEql_Click);
             // 
+            // btnOp
+            // 
+            this.btnOp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOp.Location = new System.Drawing.Point(171, 138);
+            this.btnOp.Name = "btnOp";
+            this.btnOp.Size = new System.Drawing.Size(35, 32);
+            this.btnOp.TabIndex = 18;
+            this.btnOp.Text = "(";
+            this.btnOp.UseVisualStyleBackColor = true;
+            this.btnOp.Click += new System.EventHandler(this.writeButton);
+            // 
+            // btnCl
+            // 
+            this.btnCl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCl.Location = new System.Drawing.Point(210, 138);
+            this.btnCl.Name = "btnCl";
+            this.btnCl.Size = new System.Drawing.Size(35, 32);
+            this.btnCl.TabIndex = 19;
+            this.btnCl.Text = ")";
+            this.btnCl.UseVisualStyleBackColor = true;
+            this.btnCl.Click += new System.EventHandler(this.writeButton);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Location = new System.Drawing.Point(171, 176);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(76, 32);
+            this.btnClear.TabIndex = 20;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.clearOutput);
+            // 
             // UICalcShowstuff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(186, 220);
+            this.ClientSize = new System.Drawing.Size(259, 220);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCl);
+            this.Controls.Add(this.btnOp);
             this.Controls.Add(this.btnEql);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btnMul);
@@ -248,6 +293,9 @@
         private System.Windows.Forms.Button btnMul;
         private System.Windows.Forms.Button btnDiv;
         private System.Windows.Forms.Button btnEql;
+        private System.Windows.Forms.Button btnOp;
+        private System.Windows.Forms.Button btnCl;
+        private System.Windows.Forms.Button btnClear;
 
     }
 }

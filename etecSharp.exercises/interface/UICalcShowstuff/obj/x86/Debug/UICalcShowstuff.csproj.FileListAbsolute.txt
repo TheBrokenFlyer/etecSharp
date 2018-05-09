@@ -7,3 +7,5 @@ C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.exercises\interface\UICalcShow
 C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.exercises\interface\UICalcShowstuff\bin\Debug\UICalcShowstuff.pdb
 C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.exe
 C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.pdb
