@@ -14,8 +14,6 @@ namespace WindowsFormsApplication1 {
     public partial class UICalcShowstuff : Form {
         public UICalcShowstuff() {
             InitializeComponent();
-
-            txtOut.Text = "0";
         }
         
         DataTable table = new DataTable();
