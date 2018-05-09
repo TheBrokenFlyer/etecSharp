@@ -10,3 +10,5 @@ C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.examples\etecSharp\bin\
 C:\Users\Aluno_2\Desktop\PortableGit\etecSharp\etecSharp.examples\etecSharp\obj\x86\Debug\etecSharp.pdb
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\etecSharp\obj\x86\Debug\etecSharp.exe
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\etecSharp\obj\x86\Debug\etecSharp.pdb
+C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.examples\console\etecSharp\obj\x86\Debug\etecSharp.exe
+C:\Users\Aluno\Desktop\etecSharp-master\etecSharp.examples\console\etecSharp\obj\x86\Debug\etecSharp.pdb
