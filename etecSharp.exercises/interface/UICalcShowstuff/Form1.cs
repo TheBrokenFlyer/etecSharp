@@ -20,20 +20,27 @@ namespace WindowsFormsApplication1 {
 
         private void btnEql_Click(object sender, EventArgs e) {
 
-            try {
+            try { //tries to execute this
+
+                //takes the current text in the 'output' text box and
+                //computes it using the 'table' instance of 'DataTable'
+                //<DataTable>.Compute(string textToBeComputed, string filter)
                 txtOut.Text = table.Compute(txtOut.Text, "") + "";
-            } catch {
+            } catch { //if an exeption happens, execute this
                 txtOut.Text = "ERRORORORORO";
             }
         }
 
-        private void writeButton(object sender, EventArgs e) {
-            
+        private void writeButton(object button, EventArgs e) {
             //calls method for writing on the screen
             writeOutput(
                 //cast the sender as a system button and gathers the text writen on it for usage as an argument
-                ((Button)sender).Text
+                ((Button)button).Text
             );
+        }
+        private void writeFunctionButton(object button, EventArgs e) {
+            //does the same
+            writeOutput( ((Button)button).Text );
         }
 
         private void writeOutput(string arg) {
