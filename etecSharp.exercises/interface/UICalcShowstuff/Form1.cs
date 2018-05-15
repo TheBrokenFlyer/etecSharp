@@ -19,7 +19,12 @@ namespace WindowsFormsApplication1 {
         DataTable table = new DataTable();
 
         private void btnEql_Click(object sender, EventArgs e) {
-            txtOut.Text = table.Compute(txtOut.Text, "") + "";
+
+            try {
+                txtOut.Text = table.Compute(txtOut.Text, "") + "";
+            } catch {
+                txtOut.Text = "ERRORORORORO";
+            }
         }
 
         private void writeButton(object sender, EventArgs e) {
@@ -42,5 +47,6 @@ namespace WindowsFormsApplication1 {
         private void clearOutput(object sender, EventArgs e) {
             txtOut.Text = "0";
         }
+
     }
 }

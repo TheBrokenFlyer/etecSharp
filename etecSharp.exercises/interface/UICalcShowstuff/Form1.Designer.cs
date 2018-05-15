@@ -270,6 +270,7 @@
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.txtOut);
             this.Controls.Add(this.btn7);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UICalcShowstuff";
             this.Text = "Calculator that shows the full operation and stuff";
             this.ResumeLayout(false);

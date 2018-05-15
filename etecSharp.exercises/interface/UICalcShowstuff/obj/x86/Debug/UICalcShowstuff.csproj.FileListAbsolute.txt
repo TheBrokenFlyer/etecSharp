@@ -11,8 +11,6 @@ C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\o
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.pdb
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\bin\Debug\UICalcShowstuff.exe
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\bin\Debug\UICalcShowstuff.pdb
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\WindowsFormsApplication1.UICalcShowstuff.resources
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UICalcShowstuff\obj\x86\Debug\UICalcShowstuff.csproj.GenerateResource.Cache
