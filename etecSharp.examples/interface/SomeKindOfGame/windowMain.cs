@@ -46,6 +46,14 @@ namespace WindowsFormsApplication1 {
             this.Size = new Size(size.Width -= 2, size.Height -= 1);
             this.Text = --points + "";
         }
+
+        private void btnPoint_Enter(object sender, EventArgs e) {
+            btnPoint.Focus();
+        }
+
+        private void btnPoint_Leave(object sender, EventArgs e) {
+            btnLose.Focus();
+        }
         
 
 

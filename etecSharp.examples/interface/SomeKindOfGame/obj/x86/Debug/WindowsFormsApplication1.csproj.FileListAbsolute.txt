@@ -1,7 +1,7 @@
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\WindowsFormsApplication1.windowMain.resources
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\bin\Debug\WindowsFormsApplication1.exe
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\WindowsFormsApplication1.exe
-C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\bin\Debug\someKindOfGame.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\bin\Debug\someKindOfGame.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\windowMain.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\someKindOfGame.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\SomeKindOfGame\obj\x86\Debug\someKindOfGame.pdb

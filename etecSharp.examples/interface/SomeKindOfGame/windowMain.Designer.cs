@@ -58,7 +58,11 @@
             this.btnPoint.TabStop = false;
             this.btnPoint.UseVisualStyleBackColor = false;
             this.btnPoint.Click += new System.EventHandler(this.keyAddPoints);
+            this.btnPoint.Enter += new System.EventHandler(this.btnPoint_Enter);
             this.btnPoint.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyAddPoints);
+            this.btnPoint.Leave += new System.EventHandler(this.btnPoint_Leave);
+            this.btnPoint.MouseEnter += new System.EventHandler(this.btnPoint_Enter);
+            this.btnPoint.MouseLeave += new System.EventHandler(this.btnPoint_Leave);
             // 
             // timer1
             // 
