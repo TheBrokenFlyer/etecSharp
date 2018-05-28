@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internal-Frames", "Internal-Frames.csproj", "{2503EB8B-56CE-4FE3-B4AD-CD4D9E4D3D95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalFrames", "InternalFrames.csproj", "{2503EB8B-56CE-4FE3-B4AD-CD4D9E4D3D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

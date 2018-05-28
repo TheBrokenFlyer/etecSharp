@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1 {
+﻿namespace UIInternalFrame {
     partial class frmSub {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.BackgroundImage = global::windowMain.Properties.Resources.niko;
+            this.ClientSize = new System.Drawing.Size(250, 232);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmSub";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }

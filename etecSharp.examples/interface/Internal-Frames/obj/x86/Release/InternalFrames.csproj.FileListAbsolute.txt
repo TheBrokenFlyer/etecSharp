@@ -1,0 +1,8 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\bin\Release\InternalFrames.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\bin\Release\InternalFrames.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\WindowsFormsApplication1.frmMenu.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\WindowsFormsApplication1.frmSub.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\windowMain.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.pdb

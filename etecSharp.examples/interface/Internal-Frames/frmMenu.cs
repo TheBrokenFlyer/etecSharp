@@ -7,20 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1 {
+namespace UIInternalFrame {
 
     public partial class frmMenu : Form {
 
+        public frmSub internalWindow { get; set; }
+        private int windowCount { get; set; }
+
+
         public frmMenu() {
             InitializeComponent();
-            //MessageBox.Show("hello", "uwu", MessageBoxButtons.OK);
             IsMdiContainer = true;
         }
 
+        
+        
+
         private void newWindow(object sender, EventArgs e) {
-            frmSub window = new frmSub();
-            window.MdiParent = this;
-            window.Show();
+            this.internalWindow = new frmSub(); //creates an instance of the window named 'window'.
+
+            this.internalWindow.MdiParent = this; //sets 'this' instance of frmMenu as its parent, so the window can host the instance.
+            this.internalWindow.Show(); //this is an equivalent from '.setVisible(true);' in Java. it just makes the window visible.
+            
+            this.internalWindow.Text =  //sets the name of this window... {
+                txtWindowName.Text                 //gathers the name the user typed
+                    .Replace(                     //and applies formatting syntax to it
+                        "%N%",                   //where it replaces any entries of '%N%'
+                        ++this.windowCount + "" //with the number of windows that the user had opened.
+                    );
+            //...}
         }
     }
 }
