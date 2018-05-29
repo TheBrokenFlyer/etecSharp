@@ -11,7 +11,8 @@ namespace UIInternalFrame {
 
     public partial class frmMenu : Form {
 
-        public frmSub internalWindow { get; set; }
+        public static frmSub    internalWindowUnique,
+                                internalWindowMultiple;
         private int windowCount { get; set; }
 
 
@@ -23,19 +24,42 @@ namespace UIInternalFrame {
         
         
 
-        private void newWindow(object sender, EventArgs e) {
-            this.internalWindow = new frmSub(); //creates an instance of the window named 'window'.
+        private void newWindowUnique(object sender, EventArgs e) {
+            if(internalWindowUnique == null) {
+                internalWindowUnique = new frmSub(); //creates an instance of the window named 'window'.
 
-            this.internalWindow.MdiParent = this; //sets 'this' instance of frmMenu as its parent, so the window can host the instance.
-            this.internalWindow.Show(); //this is an equivalent from '.setVisible(true);' in Java. it just makes the window visible.
-            
-            this.internalWindow.Text =  //sets the name of this window... {
-                txtWindowName.Text                 //gathers the name the user typed
-                    .Replace(                     //and applies formatting syntax to it
-                        "%N%",                   //where it replaces any entries of '%N%'
-                        ++this.windowCount + "" //with the number of windows that the user had opened.
-                    );
-            //...}
+                internalWindowUnique.MdiParent = this; //sets 'this' instance of frmMenu as its parent, so the window can host the instance.
+                internalWindowUnique.Show(); //this is an equivalent from '.setVisible(true);' in Java. it just makes the window visible.
+
+                internalWindowUnique.Text =  //sets the name of this window... {
+                    txtWindowName.Text                 //gathers the name the user typed
+                        .Replace(                     //and applies formatting syntax to it
+                            "%N%",                   //where it replaces any entries of '%N%'
+                            ++this.windowCount + "" //with the number of windows that the user had opened.
+                        );//...}
+            }
         }
+
+        private void newWindowMultiple(object sender, EventArgs e) {
+            internalWindowMultiple = new frmSub(); //creates an instance of the window named 'window'.
+
+            internalWindowMultiple.MdiParent = this; //sets 'this' instance of frmMenu as its parent, so the window can host the instance.
+            internalWindowMultiple.Show(); //this is an equivalent from '.setVisible(true);' in Java. it just makes the window visible.
+        }
+
+        private void closeApplication(object sender, EventArgs e) {
+            if(MessageBox.Show("Are you sure you want to exit?", "Closing", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK) {
+                this.Close();
+            }
+        }
+
+        private void toggleResizable(object sender, EventArgs e) {
+            if(internalWindowUnique.FormBorderStyle != System.Windows.Forms.FormBorderStyle.SizableToolWindow) {
+                internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            } else {
+                internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            }
+        }
+
     }
 }

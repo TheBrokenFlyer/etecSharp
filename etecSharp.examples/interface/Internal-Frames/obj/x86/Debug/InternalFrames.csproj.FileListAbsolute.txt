@@ -6,3 +6,4 @@ C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\ob
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Debug\InternalFrames.pdb
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Debug\UIInternalFrame.frmMenu.resources
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Debug\UIInternalFrame.frmSub.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Debug\InternalFrames.csprojResolveAssemblyReference.cache

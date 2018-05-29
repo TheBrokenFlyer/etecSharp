@@ -6,3 +6,5 @@ C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\ob
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.csproj.GenerateResource.Cache
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.exe
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\InternalFrames.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\UIInternalFrame.frmMenu.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\Internal-Frames\obj\x86\Release\UIInternalFrame.frmSub.resources

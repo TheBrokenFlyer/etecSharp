@@ -33,10 +33,12 @@
             this.ClientSize = new System.Drawing.Size(250, 232);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmSub";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.closeWindow);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
     }
 }

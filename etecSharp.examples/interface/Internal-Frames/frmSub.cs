@@ -12,5 +12,9 @@ namespace UIInternalFrame {
         public frmSub() {
             InitializeComponent();
         }
+
+        private void closeWindow(object sender, FormClosedEventArgs e) {
+            frmMenu.internalWindowUnique = null;
+        }
     }
 }
