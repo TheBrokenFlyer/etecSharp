@@ -12,3 +12,4 @@ C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.exe
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.pdb
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise7.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.csprojResolveAssemblyReference.cache

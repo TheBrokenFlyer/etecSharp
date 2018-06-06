@@ -26,7 +26,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UIMain));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu = new System.Windows.Forms.MenuStrip();
             this.stripOpen = new System.Windows.Forms.ToolStripDropDownButton();
             this.exercise1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -35,7 +35,7 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -60,15 +60,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Wilker Santana da Silva";
             // 
-            // menuStrip1
+            // menu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stripOpen});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(624, 26);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(624, 26);
+            this.menu.TabIndex = 4;
+            this.menu.Text = "menu";
             // 
             // stripOpen
             // 
@@ -90,49 +90,49 @@
             // exercise1ToolStripMenuItem
             // 
             this.exercise1ToolStripMenuItem.Name = "exercise1ToolStripMenuItem";
-            this.exercise1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exercise1ToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
             this.exercise1ToolStripMenuItem.Text = "1";
             this.exercise1ToolStripMenuItem.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem2.Text = "2";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem3.Text = "3";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem4.Text = "4";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem5.Text = "5";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem6.Text = "6";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.openExercise);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(80, 22);
             this.toolStripMenuItem7.Text = "7";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.openExercise);
             // 
@@ -143,13 +143,13 @@
             this.ClientSize = new System.Drawing.Size(624, 442);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menu;
             this.Name = "UIMain";
             this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,7 +159,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripDropDownButton stripOpen;
         private System.Windows.Forms.ToolStripMenuItem exercise1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
