@@ -1,0 +1,14 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\bin\Debug\provaDSI1.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\bin\Debug\provaDSI1.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise1.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise2.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise3.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise4.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise5.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise6.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIMain.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\provaDSI1.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.provaDSI(3-4)\provaDSI1\obj\x86\Debug\UIMixedExercises.UIExercise7.resources

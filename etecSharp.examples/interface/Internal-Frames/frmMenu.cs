@@ -54,10 +54,14 @@ namespace UIInternalFrame {
         }
 
         private void toggleResizable(object sender, EventArgs e) {
-            if(internalWindowUnique.FormBorderStyle != System.Windows.Forms.FormBorderStyle.SizableToolWindow) {
-                internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            } else {
-                internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            try {
+                if (internalWindowUnique.FormBorderStyle != System.Windows.Forms.FormBorderStyle.SizableToolWindow) {
+                    internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+                } else {
+                    internalWindowUnique.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+                }
+            } catch {
+
             }
         }
 

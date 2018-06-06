@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59CEF90C-2666-451D-8C89-63E8BF16F450}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIMixedExercises</RootNamespace>
+    <AssemblyName>provaDSI1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UIExercise1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise1.Designer.cs">
+      <DependentUpon>UIExercise1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise2.Designer.cs">
+      <DependentUpon>UIExercise2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise3.Designer.cs">
+      <DependentUpon>UIExercise3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise4.Designer.cs">
+      <DependentUpon>UIExercise4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise5.Designer.cs">
+      <DependentUpon>UIExercise5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise6.Designer.cs">
+      <DependentUpon>UIExercise6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIExercise7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIExercise7.Designer.cs">
+      <DependentUpon>UIExercise7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIMain.Designer.cs">
+      <DependentUpon>UIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UIExercise1.resx">
+      <DependentUpon>UIExercise1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise2.resx">
+      <DependentUpon>UIExercise2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise3.resx">
+      <DependentUpon>UIExercise3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise4.resx">
+      <DependentUpon>UIExercise4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise5.resx">
+      <DependentUpon>UIExercise5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise6.resx">
+      <DependentUpon>UIExercise6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIExercise7.resx">
+      <DependentUpon>UIExercise7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIMain.resx">
+      <DependentUpon>UIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\bin\Debug\UIMixedExercises.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\bin\Debug\UIMixedExercises.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.UIMain.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.UIExercise1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.UIExercise2.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.UIExercise4.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\UIMixedExercises\obj\x86\Debug\UIMixedExercises.UIExercise5.resources
