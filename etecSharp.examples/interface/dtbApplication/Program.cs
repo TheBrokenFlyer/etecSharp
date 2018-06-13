@@ -30,6 +30,7 @@ namespace dtbApplication {
         /// The <code>OleDbConnection</code> object with its connection opened.
         /// </returns>
         public static OleDbConnection connect() {
+            //try to open connection
             try {
                 _connection = new OleDbConnection(_connection_parameters);
                 _connection.Open();

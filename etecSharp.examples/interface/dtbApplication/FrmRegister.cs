@@ -27,9 +27,23 @@ namespace dtbApplication {
         /// Executes a query
         /// </summary>
         public void search() {
+            string nameParam = "";
+            string responseParam = "";
+
+            ///if there is a 
+            if (!txtName.Text.Equals("")) {
+                nameParam = string.Format("where personName like '%{0}%'", txtName.Text);
+                if (!txtResponse.Text.Equals("")) {
+                    nameParam += ", ";
+                }
+            }
+            if (!txtResponse.Text.Equals("")) {
+                responseParam = string.Format("where personResponse like '%{0}%'", txtResponse.Text);
+            }
             query =
-                 "select personName as [Name], personResponse as [Response] "
-                +"where (personName like '%|NAME|%'
+                 "select personName as [Name], personResponse as [Response] from tbPerson"
+                +nameParam
+                +responseParam
                 +"order by personName";
         }
     }

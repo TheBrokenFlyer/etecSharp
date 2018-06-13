@@ -38,6 +38,10 @@
             this.lblName = new System.Windows.Forms.Label();
             this.txtResponse = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personResponseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personResponseScoreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._DataSet = new dtbApplication._DataSet();
             this.tabsPanel = new System.Windows.Forms.TabControl();
@@ -52,10 +56,6 @@
             this.personResponseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseScoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonTableAdapter = new dtbApplication._DataSetTableAdapters.tbPersonTableAdapter();
-            this.idPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personResponseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personResponseScoreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -193,6 +193,34 @@
             this.dataGridView1.Size = new System.Drawing.Size(409, 410);
             this.dataGridView1.TabIndex = 0;
             // 
+            // idPersonDataGridViewTextBoxColumn
+            // 
+            this.idPersonDataGridViewTextBoxColumn.DataPropertyName = "idPerson";
+            this.idPersonDataGridViewTextBoxColumn.HeaderText = "idPerson";
+            this.idPersonDataGridViewTextBoxColumn.Name = "idPersonDataGridViewTextBoxColumn";
+            this.idPersonDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // personNameDataGridViewTextBoxColumn
+            // 
+            this.personNameDataGridViewTextBoxColumn.DataPropertyName = "personName";
+            this.personNameDataGridViewTextBoxColumn.HeaderText = "personName";
+            this.personNameDataGridViewTextBoxColumn.Name = "personNameDataGridViewTextBoxColumn";
+            this.personNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // personResponseDataGridViewTextBoxColumn
+            // 
+            this.personResponseDataGridViewTextBoxColumn.DataPropertyName = "personResponse";
+            this.personResponseDataGridViewTextBoxColumn.HeaderText = "personResponse";
+            this.personResponseDataGridViewTextBoxColumn.Name = "personResponseDataGridViewTextBoxColumn";
+            this.personResponseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // personResponseScoreDataGridViewTextBoxColumn1
+            // 
+            this.personResponseScoreDataGridViewTextBoxColumn1.DataPropertyName = "personResponseScore";
+            this.personResponseScoreDataGridViewTextBoxColumn1.HeaderText = "personResponseScore";
+            this.personResponseScoreDataGridViewTextBoxColumn1.Name = "personResponseScoreDataGridViewTextBoxColumn1";
+            this.personResponseScoreDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
             // tbPersonBindingSource
             // 
             this.tbPersonBindingSource.DataMember = "tbPerson";
@@ -323,34 +351,6 @@
             // 
             this.tbPersonTableAdapter.ClearBeforeFill = true;
             // 
-            // idPersonDataGridViewTextBoxColumn
-            // 
-            this.idPersonDataGridViewTextBoxColumn.DataPropertyName = "idPerson";
-            this.idPersonDataGridViewTextBoxColumn.HeaderText = "idPerson";
-            this.idPersonDataGridViewTextBoxColumn.Name = "idPersonDataGridViewTextBoxColumn";
-            this.idPersonDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personNameDataGridViewTextBoxColumn
-            // 
-            this.personNameDataGridViewTextBoxColumn.DataPropertyName = "personName";
-            this.personNameDataGridViewTextBoxColumn.HeaderText = "personName";
-            this.personNameDataGridViewTextBoxColumn.Name = "personNameDataGridViewTextBoxColumn";
-            this.personNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personResponseDataGridViewTextBoxColumn
-            // 
-            this.personResponseDataGridViewTextBoxColumn.DataPropertyName = "personResponse";
-            this.personResponseDataGridViewTextBoxColumn.HeaderText = "personResponse";
-            this.personResponseDataGridViewTextBoxColumn.Name = "personResponseDataGridViewTextBoxColumn";
-            this.personResponseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personResponseScoreDataGridViewTextBoxColumn1
-            // 
-            this.personResponseScoreDataGridViewTextBoxColumn1.DataPropertyName = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn1.HeaderText = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn1.Name = "personResponseScoreDataGridViewTextBoxColumn1";
-            this.personResponseScoreDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
             // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,7 +358,7 @@
             this.ClientSize = new System.Drawing.Size(876, 442);
             this.Controls.Add(this.tabsPanel);
             this.Name = "FrmRegister";
-            this.Text = "Form1";
+            this.Text = "TWOW prototype thing";
             this.Load += new System.EventHandler(this.FrmRegister_Load);
             this.tabRegister.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);

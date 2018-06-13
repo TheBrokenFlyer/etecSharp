@@ -10,3 +10,9 @@ C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86
 G:\dtbApplication\bin\Debug\dtbApplication.exe.config
 G:\dtbApplication\obj\x86\Debug\dtbApplication.exe
 G:\dtbApplication\obj\x86\Debug\dtbApplication.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\bin\Debug\dtbApplication.exe.config
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.FrmRegister.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.csproj.GenerateResource.Cache
