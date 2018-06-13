@@ -1,0 +1,12 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\dtbApplication.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\dtbApplication.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\dtbApplication.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\dtbApplication.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\dtbApplication.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\dtbApplication.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\TWOW-DTB.accdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\dtbApplication.exe.config
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\dtbApplication.FrmRegister.resources
+G:\dtbApplication\bin\Debug\dtbApplication.exe.config
+G:\dtbApplication\obj\x86\Debug\dtbApplication.exe
+G:\dtbApplication\obj\x86\Debug\dtbApplication.pdb
