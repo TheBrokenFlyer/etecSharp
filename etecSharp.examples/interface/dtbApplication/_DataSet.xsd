@@ -36,8 +36,8 @@
                   </DbCommand>
                 </InsertCommand>
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT idPerson, personName, personResponse, personScore FROM tbPerson</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM tbPerson</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -65,7 +65,7 @@
               <Mapping SourceColumn="idPerson" DataSetColumn="idPerson" />
               <Mapping SourceColumn="personName" DataSetColumn="personName" />
               <Mapping SourceColumn="personResponse" DataSetColumn="personResponse" />
-              <Mapping SourceColumn="personScore" DataSetColumn="personResponseScore" />
+              <Mapping SourceColumn="personScore" DataSetColumn="personScore" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -77,7 +77,7 @@
   <xs:element name="_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_DataSet" msprop:Generator_UserDSName="_DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbPerson" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_TableVarName="tabletbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_RowClassName="tbPersonRow" msprop:Generator_UserTableName="tbPerson" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent">
+        <xs:element name="tbPerson" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_TableVarName="tabletbPerson" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_UserTableName="tbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent" msprop:Generator_RowClassName="tbPersonRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idPerson" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidPerson" msprop:Generator_ColumnPropNameInRow="idPerson" msprop:Generator_ColumnPropNameInTable="idPersonColumn" msprop:Generator_UserColumnName="idPerson" type="xs:int" />
@@ -95,11 +95,11 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="personResponseScore" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnpersonResponseScore" msprop:Generator_ColumnPropNameInRow="personResponseScore" msprop:Generator_ColumnPropNameInTable="personResponseScoreColumn" msprop:Generator_UserColumnName="personResponseScore" type="xs:int" minOccurs="0" />
+              <xs:element name="personScore" msprop:Generator_ColumnVarNameInTable="columnpersonScore" msprop:Generator_ColumnPropNameInRow="personScore" msprop:Generator_ColumnPropNameInTable="personScoreColumn" msprop:Generator_UserColumnName="personScore" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbVotes" msprop:Generator_TableClassName="tbVotesDataTable" msprop:Generator_TableVarName="tabletbVotes" msprop:Generator_TablePropName="tbVotes" msprop:Generator_RowDeletingName="tbVotesRowDeleting" msprop:Generator_RowChangingName="tbVotesRowChanging" msprop:Generator_RowEvHandlerName="tbVotesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbVotesRowDeleted" msprop:Generator_UserTableName="tbVotes" msprop:Generator_RowChangedName="tbVotesRowChanged" msprop:Generator_RowEvArgName="tbVotesRowChangeEvent" msprop:Generator_RowClassName="tbVotesRow">
+        <xs:element name="tbVotes" msprop:Generator_TableClassName="tbVotesDataTable" msprop:Generator_TableVarName="tabletbVotes" msprop:Generator_RowChangedName="tbVotesRowChanged" msprop:Generator_TablePropName="tbVotes" msprop:Generator_RowDeletingName="tbVotesRowDeleting" msprop:Generator_RowChangingName="tbVotesRowChanging" msprop:Generator_RowEvHandlerName="tbVotesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbVotesRowDeleted" msprop:Generator_RowClassName="tbVotesRow" msprop:Generator_UserTableName="tbVotes" msprop:Generator_RowEvArgName="tbVotesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idVote" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidVote" msprop:Generator_ColumnPropNameInRow="idVote" msprop:Generator_ColumnPropNameInTable="idVoteColumn" msprop:Generator_UserColumnName="idVote" type="xs:int" minOccurs="0" />
@@ -110,7 +110,7 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1">
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:tbPerson" />
       <xs:field xpath="mstns:idPerson" />
     </xs:unique>

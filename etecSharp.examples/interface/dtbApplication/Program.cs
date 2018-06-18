@@ -20,7 +20,7 @@ namespace dtbApplication {
 
     public static class DTBConnection {
 
-        private static string _connection_parameters = @"Provider=Microsoft.Ace.OLEDB.12.0;DataSource=TWOW-DTB.accdb";
+        private static string _connection_parameters = @"Provider=Microsoft.Ace.OLEDB.12.0;Data Source=|DataDirectory|\TWOW-DTB.accdb; Persist Security Info=False";
         private static OleDbConnection _connection = null;
 
         /// <summary>
@@ -30,10 +30,11 @@ namespace dtbApplication {
         /// The <code>OleDbConnection</code> object with its connection opened.
         /// </returns>
         public static OleDbConnection connect() {
-            //try to open connection
+            //tries to open connection
             try {
-                _connection = new OleDbConnection(_connection_parameters);
-                _connection.Open();
+                _connection = new OleDbConnection(_connection_parameters); //sets up the connection parameters
+                _connection.Open(); //opens the connection
+
             } catch (Exception exp) {
                 while (MessageBox.Show("Failed to connect!\n" + exp.GetBaseException() + '\n' + exp.Message,
                         "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error
@@ -41,16 +42,20 @@ namespace dtbApplication {
                 ) {
                     //try to open the connection again
                     try {
-                        _connection = new OleDbConnection(_connection_parameters);
-                        _connection.Open();
-                        return _connection;
+                        _connection = new OleDbConnection(_connection_parameters); //sets up the connection parameters
+                        _connection.Open(); //opens the connection
+                        return _connection; //returns the stabilished connection
+
                     } catch (Exception exp_) {
                         exp = exp_; //copy error to 'exp' and continue the loop
+
                     }
                 }
+                //returns nothing if the connection fails
                 _connection = null;
+
             }
-            //return the stabilished connection
+            //returns the stabilished connection
             return _connection;
         }
 

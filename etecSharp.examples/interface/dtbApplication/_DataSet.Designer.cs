@@ -320,7 +320,7 @@ namespace dtbApplication {
             
             private global::System.Data.DataColumn columnpersonResponse;
             
-            private global::System.Data.DataColumn columnpersonResponseScore;
+            private global::System.Data.DataColumn columnpersonScore;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -381,9 +381,9 @@ namespace dtbApplication {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn personResponseScoreColumn {
+            public global::System.Data.DataColumn personScoreColumn {
                 get {
-                    return this.columnpersonResponseScore;
+                    return this.columnpersonScore;
                 }
             }
             
@@ -424,16 +424,23 @@ namespace dtbApplication {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbPersonRow AddtbPersonRow(string personName, string personResponse, int personResponseScore) {
+            public tbPersonRow AddtbPersonRow(string personName, string personResponse, int personScore) {
                 tbPersonRow rowtbPersonRow = ((tbPersonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         personName,
                         personResponse,
-                        personResponseScore};
+                        personScore};
                 rowtbPersonRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbPersonRow);
                 return rowtbPersonRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbPersonRow FindByidPerson(int idPerson) {
+                return ((tbPersonRow)(this.Rows.Find(new object[] {
+                            idPerson})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -456,7 +463,7 @@ namespace dtbApplication {
                 this.columnidPerson = base.Columns["idPerson"];
                 this.columnpersonName = base.Columns["personName"];
                 this.columnpersonResponse = base.Columns["personResponse"];
-                this.columnpersonResponseScore = base.Columns["personResponseScore"];
+                this.columnpersonScore = base.Columns["personScore"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -468,10 +475,10 @@ namespace dtbApplication {
                 base.Columns.Add(this.columnpersonName);
                 this.columnpersonResponse = new global::System.Data.DataColumn("personResponse", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpersonResponse);
-                this.columnpersonResponseScore = new global::System.Data.DataColumn("personResponseScore", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpersonResponseScore);
+                this.columnpersonScore = new global::System.Data.DataColumn("personScore", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpersonScore);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnidPerson}, false));
+                                this.columnidPerson}, true));
                 this.columnidPerson.AutoIncrement = true;
                 this.columnidPerson.AutoIncrementSeed = -1;
                 this.columnidPerson.AutoIncrementStep = -1;
@@ -480,7 +487,6 @@ namespace dtbApplication {
                 this.columnidPerson.Unique = true;
                 this.columnpersonName.MaxLength = 32;
                 this.columnpersonResponse.MaxLength = 255;
-                this.columnpersonResponseScore.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -951,17 +957,17 @@ namespace dtbApplication {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int personResponseScore {
+            public int personScore {
                 get {
                     try {
-                        return ((int)(this[this.tabletbPerson.personResponseScoreColumn]));
+                        return ((int)(this[this.tabletbPerson.personScoreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'personResponseScore\' in table \'tbPerson\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'personScore\' in table \'tbPerson\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbPerson.personResponseScoreColumn] = value;
+                    this[this.tabletbPerson.personScoreColumn] = value;
                 }
             }
             
@@ -991,14 +997,14 @@ namespace dtbApplication {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IspersonResponseScoreNull() {
-                return this.IsNull(this.tabletbPerson.personResponseScoreColumn);
+            public bool IspersonScoreNull() {
+                return this.IsNull(this.tabletbPerson.personScoreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetpersonResponseScoreNull() {
-                this[this.tabletbPerson.personResponseScoreColumn] = global::System.Convert.DBNull;
+            public void SetpersonScoreNull() {
+                this[this.tabletbPerson.personScoreColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1297,7 +1303,7 @@ namespace dtbApplication._DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("idPerson", "idPerson");
             tableMapping.ColumnMappings.Add("personName", "personName");
             tableMapping.ColumnMappings.Add("personResponse", "personResponse");
-            tableMapping.ColumnMappings.Add("personScore", "personResponseScore");
+            tableMapping.ColumnMappings.Add("personScore", "personScore");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -1351,7 +1357,7 @@ namespace dtbApplication._DataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT idPerson, personName, personResponse, personScore FROM tbPerson";
+            this._commandCollection[0].CommandText = "SELECT * FROM tbPerson";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1553,6 +1559,14 @@ namespace dtbApplication._DataSetTableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string personName, string personResponse, global::System.Nullable<int> personScore, int Original_idPerson, string Original_personName, string Original_personResponse, global::System.Nullable<int> Original_personScore) {
+            return this.Update(Original_idPerson, personName, personResponse, personScore, Original_idPerson, Original_personName, Original_personResponse, Original_personScore);
         }
     }
     

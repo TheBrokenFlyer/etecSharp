@@ -37,7 +37,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.txtResponse = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtbContestants = new System.Windows.Forms.DataGridView();
             this.idPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +50,7 @@
             this.lblInstructions = new System.Windows.Forms.Label();
             this.txtVote = new System.Windows.Forms.TextBox();
             this.lblVote = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtbVotes = new System.Windows.Forms.DataGridView();
             this.idPersonDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +61,7 @@
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtbContestants)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPersonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._DataSet)).BeginInit();
             this.tabsPanel.SuspendLayout();
@@ -70,7 +70,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtbVotes)).BeginInit();
             this.SuspendLayout();
             // 
             // tabRegister
@@ -101,7 +101,7 @@
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer3.Panel2.Controls.Add(this.dtbContestants);
             this.splitContainer3.Size = new System.Drawing.Size(862, 410);
             this.splitContainer3.SplitterDistance = 449;
             this.splitContainer3.TabIndex = 0;
@@ -149,6 +149,7 @@
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.registerPerson);
             // 
             // lblName
             // 
@@ -174,24 +175,24 @@
             this.txtResponse.TabIndex = 3;
             this.txtResponse.Tag = "response";
             // 
-            // dataGridView1
+            // dtbContestants
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtbContestants.AllowUserToAddRows = false;
+            this.dtbContestants.AllowUserToDeleteRows = false;
+            this.dtbContestants.AutoGenerateColumns = false;
+            this.dtbContestants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtbContestants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPersonDataGridViewTextBoxColumn,
             this.personNameDataGridViewTextBoxColumn,
             this.personResponseDataGridViewTextBoxColumn,
             this.personResponseScoreDataGridViewTextBoxColumn1});
-            this.dataGridView1.DataSource = this.tbPersonBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(409, 410);
-            this.dataGridView1.TabIndex = 0;
+            this.dtbContestants.DataSource = this.tbPersonBindingSource;
+            this.dtbContestants.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtbContestants.Location = new System.Drawing.Point(0, 0);
+            this.dtbContestants.Name = "dtbContestants";
+            this.dtbContestants.ReadOnly = true;
+            this.dtbContestants.Size = new System.Drawing.Size(409, 410);
+            this.dtbContestants.TabIndex = 0;
             // 
             // idPersonDataGridViewTextBoxColumn
             // 
@@ -266,7 +267,7 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer2.Panel2.Controls.Add(this.dtbVotes);
             this.splitContainer2.Size = new System.Drawing.Size(868, 416);
             this.splitContainer2.SplitterDistance = 443;
             this.splitContainer2.TabIndex = 0;
@@ -305,21 +306,24 @@
             this.lblVote.Tag = "name";
             this.lblVote.Text = "Vote";
             // 
-            // dataGridView2
+            // dtbVotes
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtbVotes.AllowUserToAddRows = false;
+            this.dtbVotes.AllowUserToDeleteRows = false;
+            this.dtbVotes.AutoGenerateColumns = false;
+            this.dtbVotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtbVotes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPersonDataGridViewTextBoxColumn1,
             this.personNameDataGridViewTextBoxColumn1,
             this.personResponseDataGridViewTextBoxColumn1,
             this.personResponseScoreDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.tbPersonBindingSource;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(421, 416);
-            this.dataGridView2.TabIndex = 0;
+            this.dtbVotes.DataSource = this.tbPersonBindingSource;
+            this.dtbVotes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtbVotes.Location = new System.Drawing.Point(0, 0);
+            this.dtbVotes.Name = "dtbVotes";
+            this.dtbVotes.ReadOnly = true;
+            this.dtbVotes.Size = new System.Drawing.Size(421, 416);
+            this.dtbVotes.TabIndex = 0;
             // 
             // idPersonDataGridViewTextBoxColumn1
             // 
@@ -333,12 +337,14 @@
             this.personNameDataGridViewTextBoxColumn1.DataPropertyName = "personName";
             this.personNameDataGridViewTextBoxColumn1.HeaderText = "personName";
             this.personNameDataGridViewTextBoxColumn1.Name = "personNameDataGridViewTextBoxColumn1";
+            this.personNameDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // personResponseDataGridViewTextBoxColumn1
             // 
             this.personResponseDataGridViewTextBoxColumn1.DataPropertyName = "personResponse";
             this.personResponseDataGridViewTextBoxColumn1.HeaderText = "personResponse";
             this.personResponseDataGridViewTextBoxColumn1.Name = "personResponseDataGridViewTextBoxColumn1";
+            this.personResponseDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // personResponseScoreDataGridViewTextBoxColumn
             // 
@@ -366,7 +372,7 @@
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtbContestants)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPersonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._DataSet)).EndInit();
             this.tabsPanel.ResumeLayout(false);
@@ -376,7 +382,7 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtbVotes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -399,9 +405,9 @@
         public System.Windows.Forms.TextBox txtVote;
         private System.Windows.Forms.Label lblInstructions;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtbContestants;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtbVotes;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPersonDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn personNameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseDataGridViewTextBoxColumn1;

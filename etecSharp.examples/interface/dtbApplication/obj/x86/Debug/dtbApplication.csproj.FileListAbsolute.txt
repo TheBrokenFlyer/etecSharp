@@ -16,3 +16,6 @@ C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.FrmRegister.resources
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.Properties.Resources.resources
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\obj\x86\Debug\dtbApplication.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\bin\Debug\TWOW-DTB.accdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\bin\Debug\dtbApplication.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\dtbApplication\bin\Debug\dtbApplication.pdb
