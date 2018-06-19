@@ -111,7 +111,7 @@ namespace dtbApplication {
             ///executes the query
             this.executeQuery(this.query, this._connection);
             ///updates the database with the search results
-            dtbContestants.DataSource = this.readTbPerson;
+            dtbContestants.DataSource = bindTbPerson.DataSource = this.readTbPerson;
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace dtbApplication {
             }
 
             ///updates the table
-            this.searchPerson(txtName.Text, txtResponse.Text, false);
+            this.searchPerson("", "", false);
         }
 
         private void button_registerPerson(object sender, EventArgs e) {

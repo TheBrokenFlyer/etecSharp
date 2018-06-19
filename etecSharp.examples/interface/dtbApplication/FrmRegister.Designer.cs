@@ -38,9 +38,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.txtResponse = new System.Windows.Forms.TextBox();
             this.dtbContestants = new System.Windows.Forms.DataGridView();
-            this.idPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personResponseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._DataSet = new dtbApplication._DataSet();
             this.tabsPanel = new System.Windows.Forms.TabControl();
@@ -178,40 +175,13 @@
             // 
             this.dtbContestants.AllowUserToAddRows = false;
             this.dtbContestants.AllowUserToDeleteRows = false;
-            this.dtbContestants.AutoGenerateColumns = false;
             this.dtbContestants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtbContestants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idPersonDataGridViewTextBoxColumn,
-            this.personNameDataGridViewTextBoxColumn,
-            this.personResponseDataGridViewTextBoxColumn});
-            this.dtbContestants.DataSource = this.tbPersonBindingSource;
             this.dtbContestants.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtbContestants.Location = new System.Drawing.Point(0, 0);
             this.dtbContestants.Name = "dtbContestants";
             this.dtbContestants.ReadOnly = true;
             this.dtbContestants.Size = new System.Drawing.Size(423, 410);
             this.dtbContestants.TabIndex = 0;
-            // 
-            // idPersonDataGridViewTextBoxColumn
-            // 
-            this.idPersonDataGridViewTextBoxColumn.DataPropertyName = "idPerson";
-            this.idPersonDataGridViewTextBoxColumn.HeaderText = "idPerson";
-            this.idPersonDataGridViewTextBoxColumn.Name = "idPersonDataGridViewTextBoxColumn";
-            this.idPersonDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personNameDataGridViewTextBoxColumn
-            // 
-            this.personNameDataGridViewTextBoxColumn.DataPropertyName = "personName";
-            this.personNameDataGridViewTextBoxColumn.HeaderText = "personName";
-            this.personNameDataGridViewTextBoxColumn.Name = "personNameDataGridViewTextBoxColumn";
-            this.personNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personResponseDataGridViewTextBoxColumn
-            // 
-            this.personResponseDataGridViewTextBoxColumn.DataPropertyName = "personResponse";
-            this.personResponseDataGridViewTextBoxColumn.HeaderText = "personResponse";
-            this.personResponseDataGridViewTextBoxColumn.Name = "personResponseDataGridViewTextBoxColumn";
-            this.personResponseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tbPersonBindingSource
             // 
@@ -395,9 +365,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn personNameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseScoreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idPersonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personResponseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseScoreDataGridViewTextBoxColumn1;
     }
 }
