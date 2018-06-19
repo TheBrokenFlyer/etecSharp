@@ -36,7 +36,7 @@ namespace dtbApplication {
                 _connection.Open(); //opens the connection
 
             } catch (Exception exp) {
-                while (MessageBox.Show("Failed to connect!\n" + exp.GetBaseException() + '\n' + exp.Message,
+                while (MessageBox.Show("Failed to connect!\n" + exp.Message,
                         "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error
                     ) == DialogResult.Retry
                 ) {

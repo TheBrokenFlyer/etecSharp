@@ -41,7 +41,6 @@
             this.idPersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personResponseScoreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._DataSet = new dtbApplication._DataSet();
             this.tabsPanel = new System.Windows.Forms.TabControl();
@@ -54,7 +53,6 @@
             this.idPersonDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personResponseScoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonTableAdapter = new dtbApplication._DataSetTableAdapters.tbPersonTableAdapter();
             this.tabRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
@@ -103,25 +101,26 @@
             // 
             this.splitContainer3.Panel2.Controls.Add(this.dtbContestants);
             this.splitContainer3.Size = new System.Drawing.Size(862, 410);
-            this.splitContainer3.SplitterDistance = 449;
+            this.splitContainer3.SplitterDistance = 435;
             this.splitContainer3.TabIndex = 0;
             // 
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnSearch.Location = new System.Drawing.Point(221, 226);
+            this.btnSearch.Location = new System.Drawing.Point(214, 226);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.button_searchPerson);
             // 
             // txtName
             // 
             this.txtName.AllowDrop = true;
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(140, 162);
+            this.txtName.Location = new System.Drawing.Point(133, 162);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(256, 26);
             this.txtName.TabIndex = 2;
@@ -133,7 +132,7 @@
             this.lblResponse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblResponse.AutoSize = true;
             this.lblResponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResponse.Location = new System.Drawing.Point(52, 197);
+            this.lblResponse.Location = new System.Drawing.Point(45, 197);
             this.lblResponse.Name = "lblResponse";
             this.lblResponse.Size = new System.Drawing.Size(82, 20);
             this.lblResponse.TabIndex = 1;
@@ -143,13 +142,13 @@
             // btnRegister
             // 
             this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnRegister.Location = new System.Drawing.Point(140, 226);
+            this.btnRegister.Location = new System.Drawing.Point(133, 226);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(75, 23);
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.registerPerson);
+            this.btnRegister.Click += new System.EventHandler(this.button_registerPerson);
             // 
             // lblName
             // 
@@ -157,7 +156,7 @@
             this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(52, 165);
+            this.lblName.Location = new System.Drawing.Point(45, 165);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(51, 20);
             this.lblName.TabIndex = 0;
@@ -169,7 +168,7 @@
             this.txtResponse.AllowDrop = true;
             this.txtResponse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtResponse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResponse.Location = new System.Drawing.Point(140, 194);
+            this.txtResponse.Location = new System.Drawing.Point(133, 194);
             this.txtResponse.Name = "txtResponse";
             this.txtResponse.Size = new System.Drawing.Size(256, 26);
             this.txtResponse.TabIndex = 3;
@@ -184,14 +183,13 @@
             this.dtbContestants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPersonDataGridViewTextBoxColumn,
             this.personNameDataGridViewTextBoxColumn,
-            this.personResponseDataGridViewTextBoxColumn,
-            this.personResponseScoreDataGridViewTextBoxColumn1});
+            this.personResponseDataGridViewTextBoxColumn});
             this.dtbContestants.DataSource = this.tbPersonBindingSource;
             this.dtbContestants.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtbContestants.Location = new System.Drawing.Point(0, 0);
             this.dtbContestants.Name = "dtbContestants";
             this.dtbContestants.ReadOnly = true;
-            this.dtbContestants.Size = new System.Drawing.Size(409, 410);
+            this.dtbContestants.Size = new System.Drawing.Size(423, 410);
             this.dtbContestants.TabIndex = 0;
             // 
             // idPersonDataGridViewTextBoxColumn
@@ -214,13 +212,6 @@
             this.personResponseDataGridViewTextBoxColumn.HeaderText = "personResponse";
             this.personResponseDataGridViewTextBoxColumn.Name = "personResponseDataGridViewTextBoxColumn";
             this.personResponseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personResponseScoreDataGridViewTextBoxColumn1
-            // 
-            this.personResponseScoreDataGridViewTextBoxColumn1.DataPropertyName = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn1.HeaderText = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn1.Name = "personResponseScoreDataGridViewTextBoxColumn1";
-            this.personResponseScoreDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // tbPersonBindingSource
             // 
@@ -276,11 +267,11 @@
             // 
             this.lblInstructions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblInstructions.AutoSize = true;
-            this.lblInstructions.Location = new System.Drawing.Point(160, 216);
+            this.lblInstructions.Location = new System.Drawing.Point(140, 216);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(122, 13);
+            this.lblInstructions.Size = new System.Drawing.Size(163, 13);
             this.lblInstructions.TabIndex = 5;
-            this.lblInstructions.Text = "format: X>X>X>X>X>[...]";
+            this.lblInstructions.Text = "<this part is still work in progress>";
             // 
             // txtVote
             // 
@@ -315,8 +306,7 @@
             this.dtbVotes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPersonDataGridViewTextBoxColumn1,
             this.personNameDataGridViewTextBoxColumn1,
-            this.personResponseDataGridViewTextBoxColumn1,
-            this.personResponseScoreDataGridViewTextBoxColumn});
+            this.personResponseDataGridViewTextBoxColumn1});
             this.dtbVotes.DataSource = this.tbPersonBindingSource;
             this.dtbVotes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtbVotes.Location = new System.Drawing.Point(0, 0);
@@ -345,13 +335,6 @@
             this.personResponseDataGridViewTextBoxColumn1.HeaderText = "personResponse";
             this.personResponseDataGridViewTextBoxColumn1.Name = "personResponseDataGridViewTextBoxColumn1";
             this.personResponseDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // personResponseScoreDataGridViewTextBoxColumn
-            // 
-            this.personResponseScoreDataGridViewTextBoxColumn.DataPropertyName = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn.HeaderText = "personResponseScore";
-            this.personResponseScoreDataGridViewTextBoxColumn.Name = "personResponseScoreDataGridViewTextBoxColumn";
-            this.personResponseScoreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tbPersonTableAdapter
             // 

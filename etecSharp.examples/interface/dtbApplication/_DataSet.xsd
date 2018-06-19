@@ -77,18 +77,18 @@
   <xs:element name="_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_DataSet" msprop:Generator_UserDSName="_DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbPerson" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_TableVarName="tabletbPerson" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_UserTableName="tbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent" msprop:Generator_RowClassName="tbPersonRow">
+        <xs:element name="tbPerson" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_TableVarName="tabletbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_RowClassName="tbPersonRow" msprop:Generator_UserTableName="tbPerson" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idPerson" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidPerson" msprop:Generator_ColumnPropNameInRow="idPerson" msprop:Generator_ColumnPropNameInTable="idPersonColumn" msprop:Generator_UserColumnName="idPerson" type="xs:int" />
-              <xs:element name="personName" msprop:Generator_ColumnVarNameInTable="columnpersonName" msprop:Generator_ColumnPropNameInRow="personName" msprop:Generator_ColumnPropNameInTable="personNameColumn" msprop:Generator_UserColumnName="personName" minOccurs="0">
+              <xs:element name="idPerson" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidPerson" msprop:Generator_ColumnPropNameInRow="idPerson" msprop:Generator_ColumnPropNameInTable="idPersonColumn" msprop:Generator_UserColumnName="idPerson" type="xs:int" />
+              <xs:element name="personName" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="personName" msprop:Generator_ColumnVarNameInTable="columnpersonName" msprop:Generator_ColumnPropNameInTable="personNameColumn" msprop:Generator_UserColumnName="personName" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="32" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="personResponse" msprop:Generator_ColumnVarNameInTable="columnpersonResponse" msprop:Generator_ColumnPropNameInRow="personResponse" msprop:Generator_ColumnPropNameInTable="personResponseColumn" msprop:Generator_UserColumnName="personResponse" minOccurs="0">
+              <xs:element name="personResponse" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="personResponse" msprop:Generator_ColumnVarNameInTable="columnpersonResponse" msprop:Generator_ColumnPropNameInTable="personResponseColumn" msprop:Generator_UserColumnName="personResponse" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
@@ -99,7 +99,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbVotes" msprop:Generator_TableClassName="tbVotesDataTable" msprop:Generator_TableVarName="tabletbVotes" msprop:Generator_RowChangedName="tbVotesRowChanged" msprop:Generator_TablePropName="tbVotes" msprop:Generator_RowDeletingName="tbVotesRowDeleting" msprop:Generator_RowChangingName="tbVotesRowChanging" msprop:Generator_RowEvHandlerName="tbVotesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbVotesRowDeleted" msprop:Generator_RowClassName="tbVotesRow" msprop:Generator_UserTableName="tbVotes" msprop:Generator_RowEvArgName="tbVotesRowChangeEvent">
+        <xs:element name="tbVotes" msprop:Generator_TableClassName="tbVotesDataTable" msprop:Generator_TableVarName="tabletbVotes" msprop:Generator_TablePropName="tbVotes" msprop:Generator_RowDeletingName="tbVotesRowDeleting" msprop:Generator_RowChangingName="tbVotesRowChanging" msprop:Generator_RowEvHandlerName="tbVotesRowChangeEventHandler" msprop:Generator_RowDeletedName="tbVotesRowDeleted" msprop:Generator_UserTableName="tbVotes" msprop:Generator_RowChangedName="tbVotesRowChanged" msprop:Generator_RowEvArgName="tbVotesRowChangeEvent" msprop:Generator_RowClassName="tbVotesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idVote" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidVote" msprop:Generator_ColumnPropNameInRow="idVote" msprop:Generator_ColumnPropNameInTable="idVoteColumn" msprop:Generator_UserColumnName="idVote" type="xs:int" minOccurs="0" />
@@ -114,11 +114,15 @@
       <xs:selector xpath=".//mstns:tbPerson" />
       <xs:field xpath="mstns:idPerson" />
     </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:tbPerson" />
+      <xs:field xpath="mstns:personName" />
+    </xs:unique>
     <xs:unique name="tbVotes_Constraint1" msdata:ConstraintName="Constraint1">
       <xs:selector xpath=".//mstns:tbVotes" />
       <xs:field xpath="mstns:idVote" />
     </xs:unique>
-    <xs:unique name="Constraint2">
+    <xs:unique name="tbVotes_Constraint2" msdata:ConstraintName="Constraint2">
       <xs:selector xpath=".//mstns:tbVotes" />
       <xs:field xpath="mstns:voteOwner" />
     </xs:unique>

@@ -52,7 +52,8 @@ namespace dtbApplication {
         /// <param name="query">is the string with the query to be executed</param>
         /// <param name="connection">is the connection to be used for the execusion</param>
         /// <returns>the OleDbCommand holding the results of this query</returns>
-        private OleDbCommand executeQuery(string query, OleDbConnection connection) {
+        private void executeQuery(string query, OleDbConnection connection) {
+            ///prepares the command to be executed
             OleDbCommand _dtCommand = new OleDbCommand(query, connection);
 
             ///if the command is not to search/select...
@@ -61,55 +62,64 @@ namespace dtbApplication {
                 _dtCommand.ExecuteNonQuery();
 
             ///otherwise if the search query has no rows
-            } else if (!_dtCommand.ExecuteReader().HasRows) {
-                MessageBox.Show("executeQuery(): nothing found.");
-            }
+            } else {
+                ///executes the reader and sends to the reader
+                this.readTbPerson = _dtCommand.ExecuteReader();
 
-            return _dtCommand;
+            }
         }
 
         /// <summary>
-        /// Executes a search query on the database
+        /// Executes a search query on the table 'tbPerson'.
         /// </summary>
-        public void search() {
-            string nameParam = "";
-            string responseParam = "";
+        /// <param name="name">is the name to be searched</param>
+        /// <param name="response">is the response to be searched</param>
+        /// <param name="like">if the parameter is LIKE</param>
+        public void searchPerson(string name, string response, bool like) {
+            string parameters = "";
 
-            if (!txtName.Text.Equals("")) { //if there is a search parameter for the name...
+            string criteriaEql = null;
+            string criteriaChar = null;
 
-                //includes the name in the query
-                nameParam = string.Format("where personName like '%{0}%'", txtName.Text);
-
-                //if there is also a parameter for the response search
-                if (!txtResponse.Text.Equals("")) {
-                    nameParam += ", "; //includes a space for querying 
-                }
+            if (like) {
+                criteriaEql = "like";
+                criteriaChar = "%";
+            } else {
+                criteriaEql = "=";
+                criteriaChar = "";
             }
-            if (!txtResponse.Text.Equals("")) {
-                responseParam = string.Format("where personResponse like '%{0}%'", txtResponse.Text);
+
+            if(name.Length > 0) {
+                parameters += string.Format("where (personName {1} '{2}{0}{2}')", name, criteriaEql, criteriaChar);
+            }
+            if(response.Length > 0) {
+                if (parameters.Length > 0) {
+                    parameters += " and ";
+                } else {
+                    parameters += " where ";
+                }
+
+                parameters += string.Format("(personResponse {1} '{2}{0}{2}')", response, criteriaEql, criteriaChar);
             }
 
             ///"select (columns) from tbPerson {where {search queries}} order by personName;"
-            query =
-                 "select personName as [Name], personResponse as [Response] from tbPerson"
-                +nameParam
-                +responseParam
-                +"order by personName;";
+            query = string.Format(
+                        "select personName as [Name], personResponse as [Response] from tbPerson {0} order by personName;",
+                        parameters
+                    );
 
             ///executes the query
-            executeQuery(this.query, this._connection);
+            this.executeQuery(this.query, this._connection);
+            ///updates the database with the search results
+            dtbContestants.DataSource = this.readTbPerson;
         }
 
         /// <summary>
-        /// Button action for registering a person into the database 'tbPerson'
+        /// Registers a person into the database 'tbPerson'
         /// </summary>
-        private void registerPerson(object sender, EventArgs e) {
-            ///gathers the info from both fields...
-            string nameParam = txtName.Text;
-            string responseParam = txtResponse.Text;
-
+        private void registerPerson(string name, string response) {
             ///if any are empty, interrupt.
-            if (nameParam.Equals("") | responseParam.Equals("")) {
+            if (name.Equals("") | response.Equals("")) {
                 MessageBox.Show(@"Missing data :\", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -117,13 +127,29 @@ namespace dtbApplication {
             ///"insert into tbPerson(columns) values('{name}', '{response}');"
             query =
                  "insert into tbPerson(personName, personResponse) values ('"
-                +nameParam      +"', '"
-                +responseParam  +"');";
+                +name      +"', '"
+                +response  +"');";
 
-            ///executes the query
-            executeQuery(this.query, this._connection);
+            ///tries to execute the query
+            try {
+                executeQuery(this.query, this._connection);
+                MessageBox.Show("registered! :3");
 
-            MessageBox.Show("registered! :3");
+            } catch (OleDbException exp) {
+                MessageBox.Show(@"Failed to register :\" + '\n' + exp.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            ///updates the table
+            this.searchPerson(txtName.Text, txtResponse.Text, false);
+        }
+
+        private void button_registerPerson(object sender, EventArgs e) {
+            this.registerPerson(txtName.Text, txtResponse.Text);
+        }
+
+        private void button_searchPerson(object sender, EventArgs e) {
+            ///updates the table
+            this.searchPerson(txtName.Text, txtResponse.Text, false);
         }
     }
 }

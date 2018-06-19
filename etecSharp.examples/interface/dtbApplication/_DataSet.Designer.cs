@@ -479,12 +479,14 @@ namespace dtbApplication {
                 base.Columns.Add(this.columnpersonScore);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidPerson}, true));
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint2", new global::System.Data.DataColumn[] {
+                                this.columnpersonName}, false));
                 this.columnidPerson.AutoIncrement = true;
-                this.columnidPerson.AutoIncrementSeed = -1;
-                this.columnidPerson.AutoIncrementStep = -1;
+                this.columnidPerson.AutoIncrementSeed = 1;
                 this.columnidPerson.AllowDBNull = false;
                 this.columnidPerson.ReadOnly = true;
                 this.columnidPerson.Unique = true;
+                this.columnpersonName.Unique = true;
                 this.columnpersonName.MaxLength = 32;
                 this.columnpersonResponse.MaxLength = 255;
             }
@@ -943,11 +945,11 @@ namespace dtbApplication {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string personResponse {
                 get {
-                    try {
-                        return ((string)(this[this.tabletbPerson.personResponseColumn]));
+                    if (this.IspersonResponseNull()) {
+                        return null;
                     }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'personResponse\' in table \'tbPerson\' is DBNull.", e);
+                    else {
+                        return ((string)(this[this.tabletbPerson.personResponseColumn]));
                     }
                 }
                 set {
