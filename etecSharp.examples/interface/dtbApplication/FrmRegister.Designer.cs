@@ -51,6 +51,8 @@
             this.personNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personResponseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbPersonTableAdapter = new dtbApplication._DataSetTableAdapters.tbPersonTableAdapter();
+            this.tbPersonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -66,6 +68,8 @@
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtbVotes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPersonBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabRegister
@@ -310,6 +314,16 @@
             // 
             this.tbPersonTableAdapter.ClearBeforeFill = true;
             // 
+            // tbPersonBindingSource1
+            // 
+            this.tbPersonBindingSource1.DataMember = "tbPerson";
+            this.tbPersonBindingSource1.DataSource = this._DataSet;
+            // 
+            // dataSetBindingSource
+            // 
+            this.dataSetBindingSource.DataSource = this._DataSet;
+            this.dataSetBindingSource.Position = 0;
+            // 
             // FrmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +350,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtbVotes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPersonBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,6 +382,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseScoreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn personResponseScoreDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource tbPersonBindingSource1;
+        private System.Windows.Forms.BindingSource dataSetBindingSource;
     }
 }
 

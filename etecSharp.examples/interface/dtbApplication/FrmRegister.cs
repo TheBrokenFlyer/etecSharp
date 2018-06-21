@@ -111,7 +111,8 @@ namespace dtbApplication {
             ///executes the query
             this.executeQuery(this.query, this._connection);
             ///updates the database with the search results
-            dtbContestants.DataSource = bindTbPerson.DataSource = this.readTbPerson;
+            this.bindTbPerson.DataSource = this.readTbPerson;
+            dtbContestants.DataSource = this.bindTbPerson;
         }
 
         /// <summary>
