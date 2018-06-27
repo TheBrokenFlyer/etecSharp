@@ -163,8 +163,12 @@ namespace dtbApplication {
 
         private void button_searchPerson(object sender, EventArgs e) {
             ///updates the table
-            this.searchPerson(txtName.Text, txtResponse.Text, false);
+            this.searchPerson(txtName.Text, txtResponse.Text, true);
 
+        }
+
+        private void rowSelect(object sender, EventArgs e) {
+            ;
         }
     }
 }
