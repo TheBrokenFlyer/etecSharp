@@ -74,28 +74,37 @@ namespace dtbApplication {
         /// </summary>
         /// <param name="name">is the name to be searched</param>
         /// <param name="response">is the response to be searched</param>
-        /// <param name="like">if the parameter is LIKE</param>
-        public void searchPerson(string name, string response, bool like) {
+        /// <param name="like">if the parameter is LIKE, rather than EQUALS</param>
+        public void searchPerson(string name, string response, bool like)
+        {
             string parameters = "";
 
             string criteriaEql = null;
             string criteriaChar = null;
 
-            if (like) {
+            if (like)
+            {
                 criteriaEql = "like";
                 criteriaChar = "%";
-            } else {
+            }
+            else
+            {
                 criteriaEql = "=";
                 criteriaChar = "";
             }
 
-            if(name.Length > 0) {
+            if (name.Length > 0)
+            {
                 parameters += string.Format("where (personName {1} '{2}{0}{2}')", name, criteriaEql, criteriaChar);
             }
-            if(response.Length > 0) {
-                if (parameters.Length > 0) {
+            if (response.Length > 0)
+            {
+                if (parameters.Length > 0)
+                {
                     parameters += " and ";
-                } else {
+                }
+                else
+                {
                     parameters += " where ";
                 }
 
@@ -111,8 +120,12 @@ namespace dtbApplication {
             ///executes the query
             this.executeQuery(this.query, this._connection);
             ///updates the database with the search results
-            this.bindTbPerson.DataSource = this.readTbPerson;
-            dtbContestants.DataSource = this.bindTbPerson;
+            if (this.readTbPerson.HasRows) {
+                this.bindTbPerson.DataSource = this.readTbPerson;
+                dtbContestants.DataSource = this.bindTbPerson;
+            } else {
+                this.bindTbPerson.DataSource = new {Empty = "no results"};
+            }
         }
 
         /// <summary>
@@ -151,6 +164,7 @@ namespace dtbApplication {
         private void button_searchPerson(object sender, EventArgs e) {
             ///updates the table
             this.searchPerson(txtName.Text, txtResponse.Text, false);
+
         }
     }
 }
