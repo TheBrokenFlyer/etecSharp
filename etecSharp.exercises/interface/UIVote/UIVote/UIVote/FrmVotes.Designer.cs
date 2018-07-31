@@ -74,7 +74,6 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(478, 435);
             this.tabControl.TabIndex = 0;
-            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
             // tabVoter
             // 
@@ -99,129 +98,116 @@
             this.tabVoter.Size = new System.Drawing.Size(470, 409);
             this.tabVoter.TabIndex = 0;
             this.tabVoter.Text = "Add voter";
-            this.tabVoter.Click += new System.EventHandler(this.tabVoter_Click);
             // 
             // btnVoterClear
             // 
             this.btnVoterClear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVoterClear.Location = new System.Drawing.Point(238, 137);
+            this.btnVoterClear.Location = new System.Drawing.Point(238, 167);
             this.btnVoterClear.Name = "btnVoterClear";
             this.btnVoterClear.Size = new System.Drawing.Size(75, 23);
             this.btnVoterClear.TabIndex = 11;
             this.btnVoterClear.Text = "Clear";
             this.btnVoterClear.UseVisualStyleBackColor = true;
-            this.btnVoterClear.Click += new System.EventHandler(this.btnVoterClear_Click);
             // 
             // lblVoterGuardian
             // 
             this.lblVoterGuardian.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoterGuardian.AutoSize = true;
-            this.lblVoterGuardian.Location = new System.Drawing.Point(78, 114);
+            this.lblVoterGuardian.Location = new System.Drawing.Point(78, 144);
             this.lblVoterGuardian.Name = "lblVoterGuardian";
             this.lblVoterGuardian.Size = new System.Drawing.Size(79, 13);
             this.lblVoterGuardian.TabIndex = 8;
             this.lblVoterGuardian.Text = "Guardian name";
-            this.lblVoterGuardian.Click += new System.EventHandler(this.lblVoterGuardian_Click);
             // 
             // txtVoterGuardian
             // 
             this.txtVoterGuardian.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterGuardian.Location = new System.Drawing.Point(169, 111);
+            this.txtVoterGuardian.Location = new System.Drawing.Point(169, 141);
             this.txtVoterGuardian.Name = "txtVoterGuardian";
             this.txtVoterGuardian.Size = new System.Drawing.Size(256, 20);
             this.txtVoterGuardian.TabIndex = 9;
-            this.txtVoterGuardian.TextChanged += new System.EventHandler(this.txtVoterGuardian_TextChanged);
             // 
             // lblVoterPhone
             // 
             this.lblVoterPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoterPhone.AutoSize = true;
-            this.lblVoterPhone.Location = new System.Drawing.Point(70, 88);
+            this.lblVoterPhone.Location = new System.Drawing.Point(70, 118);
             this.lblVoterPhone.Name = "lblVoterPhone";
             this.lblVoterPhone.Size = new System.Drawing.Size(38, 13);
             this.lblVoterPhone.TabIndex = 6;
             this.lblVoterPhone.Text = "Phone";
-            this.lblVoterPhone.Click += new System.EventHandler(this.lblVoterPhone_Click);
             // 
             // lblVoterAddress
             // 
             this.lblVoterAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoterAddress.AutoSize = true;
-            this.lblVoterAddress.Location = new System.Drawing.Point(62, 62);
+            this.lblVoterAddress.Location = new System.Drawing.Point(62, 92);
             this.lblVoterAddress.Name = "lblVoterAddress";
             this.lblVoterAddress.Size = new System.Drawing.Size(45, 13);
             this.lblVoterAddress.TabIndex = 4;
             this.lblVoterAddress.Text = "Address";
-            this.lblVoterAddress.Click += new System.EventHandler(this.lblVoterAddress_Click);
             // 
             // txtVoterPhone
             // 
             this.txtVoterPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterPhone.Location = new System.Drawing.Point(161, 85);
+            this.txtVoterPhone.Location = new System.Drawing.Point(161, 115);
             this.txtVoterPhone.Name = "txtVoterPhone";
             this.txtVoterPhone.Size = new System.Drawing.Size(256, 20);
             this.txtVoterPhone.TabIndex = 7;
-            this.txtVoterPhone.TextChanged += new System.EventHandler(this.txtVoterPhone_TextChanged);
             // 
             // txtVoterAddress
             // 
             this.txtVoterAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterAddress.Location = new System.Drawing.Point(153, 59);
+            this.txtVoterAddress.Location = new System.Drawing.Point(153, 89);
             this.txtVoterAddress.Name = "txtVoterAddress";
             this.txtVoterAddress.Size = new System.Drawing.Size(256, 20);
             this.txtVoterAddress.TabIndex = 5;
-            this.txtVoterAddress.TextChanged += new System.EventHandler(this.txtVoterAddress_TextChanged);
             // 
             // btnVoter
             // 
             this.btnVoter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVoter.Location = new System.Drawing.Point(157, 137);
+            this.btnVoter.Location = new System.Drawing.Point(157, 167);
             this.btnVoter.Name = "btnVoter";
             this.btnVoter.Size = new System.Drawing.Size(75, 23);
             this.btnVoter.TabIndex = 10;
             this.btnVoter.Text = "Insert voter";
             this.btnVoter.UseVisualStyleBackColor = true;
-            this.btnVoter.Click += new System.EventHandler(this.btnVoter_Click);
             // 
             // lblVoterRn
             // 
             this.lblVoterRn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoterRn.AutoSize = true;
-            this.lblVoterRn.Location = new System.Drawing.Point(54, 35);
+            this.lblVoterRn.Location = new System.Drawing.Point(54, 65);
             this.lblVoterRn.Name = "lblVoterRn";
             this.lblVoterRn.Size = new System.Drawing.Size(23, 13);
             this.lblVoterRn.TabIndex = 2;
             this.lblVoterRn.Text = "RN";
-            this.lblVoterRn.Click += new System.EventHandler(this.lblVoterRn_Click);
             // 
             // lblVoterName
             // 
             this.lblVoterName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoterName.AutoSize = true;
-            this.lblVoterName.Location = new System.Drawing.Point(46, 9);
+            this.lblVoterName.Location = new System.Drawing.Point(46, 39);
             this.lblVoterName.Name = "lblVoterName";
             this.lblVoterName.Size = new System.Drawing.Size(35, 13);
             this.lblVoterName.TabIndex = 0;
             this.lblVoterName.Text = "Name";
-            this.lblVoterName.Click += new System.EventHandler(this.lblVoterName_Click);
             // 
             // txtVoterRn
             // 
             this.txtVoterRn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterRn.Location = new System.Drawing.Point(145, 32);
+            this.txtVoterRn.Location = new System.Drawing.Point(145, 62);
             this.txtVoterRn.Name = "txtVoterRn";
             this.txtVoterRn.Size = new System.Drawing.Size(256, 20);
             this.txtVoterRn.TabIndex = 3;
-            this.txtVoterRn.TextChanged += new System.EventHandler(this.txtVoterRn_TextChanged);
             // 
             // txtVoterName
             // 
             this.txtVoterName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterName.Location = new System.Drawing.Point(137, 6);
+            this.txtVoterName.Location = new System.Drawing.Point(137, 36);
             this.txtVoterName.Name = "txtVoterName";
             this.txtVoterName.Size = new System.Drawing.Size(256, 20);
             this.txtVoterName.TabIndex = 1;
-            this.txtVoterName.TextChanged += new System.EventHandler(this.txtVoterName_TextChanged);
             // 
             // tabCandidate
             // 
@@ -236,18 +222,15 @@
             this.tabCandidate.Size = new System.Drawing.Size(470, 409);
             this.tabCandidate.TabIndex = 1;
             this.tabCandidate.Text = "Add candidate";
-            this.tabCandidate.Click += new System.EventHandler(this.tabCandidate_Click);
             // 
             // btnCandidate
             // 
-            this.btnCandidate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCandidate.Location = new System.Drawing.Point(198, 378);
             this.btnCandidate.Name = "btnCandidate";
             this.btnCandidate.Size = new System.Drawing.Size(75, 23);
             this.btnCandidate.TabIndex = 3;
             this.btnCandidate.Text = "Add candidate";
             this.btnCandidate.UseVisualStyleBackColor = true;
-            this.btnCandidate.Click += new System.EventHandler(this.btnCandidate_Click);
             // 
             // txtCandidateRn
             // 
@@ -256,7 +239,6 @@
             this.txtCandidateRn.Name = "txtCandidateRn";
             this.txtCandidateRn.Size = new System.Drawing.Size(256, 20);
             this.txtCandidateRn.TabIndex = 2;
-            this.txtCandidateRn.TextChanged += new System.EventHandler(this.txtCandidateRn_TextChanged);
             // 
             // lblCandidateRn
             // 
@@ -267,7 +249,6 @@
             this.lblCandidateRn.Size = new System.Drawing.Size(74, 13);
             this.lblCandidateRn.TabIndex = 1;
             this.lblCandidateRn.Text = "Candidate RN";
-            this.lblCandidateRn.Click += new System.EventHandler(this.lblCandidateRn_Click);
             // 
             // tabVote
             // 
@@ -283,93 +264,81 @@
             this.tabVote.TabIndex = 2;
             this.tabVote.Text = "Vote";
             this.tabVote.UseVisualStyleBackColor = true;
-            this.tabVote.Click += new System.EventHandler(this.tabVote_Click);
             // 
             // btnVote
             // 
-            this.btnVote.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnVote.Location = new System.Drawing.Point(198, 219);
             this.btnVote.Name = "btnVote";
             this.btnVote.Size = new System.Drawing.Size(75, 23);
             this.btnVote.TabIndex = 4;
             this.btnVote.Text = "Vote!";
             this.btnVote.UseVisualStyleBackColor = true;
-            this.btnVote.Click += new System.EventHandler(this.btnVote_Click);
             // 
             // lblVoteCandidate
             // 
-            this.lblVoteCandidate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoteCandidate.AutoSize = true;
             this.lblVoteCandidate.Location = new System.Drawing.Point(145, 196);
             this.lblVoteCandidate.Name = "lblVoteCandidate";
             this.lblVoteCandidate.Size = new System.Drawing.Size(74, 13);
-            this.lblVoteCandidate.TabIndex = 3;
+            this.lblVoteCandidate.TabIndex = 2;
             this.lblVoteCandidate.Text = "Candidate RN";
-            this.lblVoteCandidate.Click += new System.EventHandler(this.lblVoteCandidate_Click);
             // 
             // lblVoteRn
             // 
-            this.lblVoteRn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVoteRn.AutoSize = true;
             this.lblVoteRn.Location = new System.Drawing.Point(145, 169);
             this.lblVoteRn.Name = "lblVoteRn";
             this.lblVoteRn.Size = new System.Drawing.Size(51, 13);
-            this.lblVoteRn.TabIndex = 2;
+            this.lblVoteRn.TabIndex = 0;
             this.lblVoteRn.Text = "Voter RN";
-            this.lblVoteRn.Click += new System.EventHandler(this.lblVoteRn_Click);
             // 
             // txtVoteCandidate
             // 
-            this.txtVoteCandidate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtVoteCandidate.Location = new System.Drawing.Point(225, 193);
             this.txtVoteCandidate.Name = "txtVoteCandidate";
             this.txtVoteCandidate.Size = new System.Drawing.Size(100, 20);
-            this.txtVoteCandidate.TabIndex = 1;
-            this.txtVoteCandidate.TextChanged += new System.EventHandler(this.txtVoteCandidate_TextChanged);
+            this.txtVoteCandidate.TabIndex = 3;
             // 
             // txtVoteRn
             // 
-            this.txtVoteRn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtVoteRn.Location = new System.Drawing.Point(225, 166);
             this.txtVoteRn.Name = "txtVoteRn";
             this.txtVoteRn.Size = new System.Drawing.Size(100, 20);
-            this.txtVoteRn.TabIndex = 0;
-            this.txtVoteRn.TextChanged += new System.EventHandler(this.txtVoteRn_TextChanged);
+            this.txtVoteRn.TabIndex = 1;
             // 
             // txtVoterSearch
             // 
             this.txtVoterSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtVoterSearch.Location = new System.Drawing.Point(49, 381);
+            this.txtVoterSearch.Location = new System.Drawing.Point(49, 352);
             this.txtVoterSearch.Name = "txtVoterSearch";
             this.txtVoterSearch.Size = new System.Drawing.Size(376, 20);
             this.txtVoterSearch.TabIndex = 13;
-            this.txtVoterSearch.TextChanged += new System.EventHandler(this.txtVoterSearch_TextChanged);
+            this.txtVoterSearch.Text = "search...";
             // 
             // dataviewVoters
             // 
             this.dataviewVoters.AllowUserToAddRows = false;
             this.dataviewVoters.AllowUserToDeleteRows = false;
+            this.dataviewVoters.AllowUserToResizeRows = false;
             this.dataviewVoters.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataviewVoters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataviewVoters.Location = new System.Drawing.Point(49, 166);
+            this.dataviewVoters.Location = new System.Drawing.Point(49, 196);
             this.dataviewVoters.Name = "dataviewVoters";
             this.dataviewVoters.ReadOnly = true;
-            this.dataviewVoters.Size = new System.Drawing.Size(376, 209);
+            this.dataviewVoters.Size = new System.Drawing.Size(376, 150);
             this.dataviewVoters.TabIndex = 12;
-            this.dataviewVoters.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataviewVoters_CellContentClick);
             // 
             // dataviewCandidates
             // 
             this.dataviewCandidates.AllowUserToAddRows = false;
             this.dataviewCandidates.AllowUserToDeleteRows = false;
-            this.dataviewCandidates.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataviewCandidates.AllowUserToResizeRows = false;
             this.dataviewCandidates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataviewCandidates.Location = new System.Drawing.Point(70, 6);
             this.dataviewCandidates.Name = "dataviewCandidates";
             this.dataviewCandidates.ReadOnly = true;
             this.dataviewCandidates.Size = new System.Drawing.Size(333, 340);
             this.dataviewCandidates.TabIndex = 0;
-            this.dataviewCandidates.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataviewCandidates_CellContentClick);
             // 
             // FrmVotes
             // 
@@ -377,7 +346,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 435);
             this.Controls.Add(this.tabControl);
+            this.MaximizeBox = false;
             this.Name = "FrmVotes";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Form1";
             this.tabControl.ResumeLayout(false);
             this.tabVoter.ResumeLayout(false);
@@ -418,8 +389,8 @@
         private System.Windows.Forms.Label lblVoterGuardian;
         private System.Windows.Forms.TextBox txtVoterGuardian;
         private System.Windows.Forms.Button btnVoterClear;
-        private System.Windows.Forms.TextBox txtVoterSearch;
         private System.Windows.Forms.DataGridView dataviewVoters;
+        private System.Windows.Forms.TextBox txtVoterSearch;
         private System.Windows.Forms.DataGridView dataviewCandidates;
 
     }
