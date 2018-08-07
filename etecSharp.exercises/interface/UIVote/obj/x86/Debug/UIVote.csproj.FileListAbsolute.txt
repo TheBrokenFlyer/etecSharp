@@ -8,3 +8,5 @@ C:\Users\Aluno\Desktop\UIVote\UIVote\obj\x86\Debug\UIVote.exe
 C:\Users\Aluno\Desktop\UIVote\UIVote\obj\x86\Debug\UIVote.pdb
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIVote\UIVote\obj\x86\Debug\UIVote.exe
 C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIVote\UIVote\obj\x86\Debug\UIVote.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIVote\obj\x86\Debug\UIVote.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIVote\obj\x86\Debug\UIVote.pdb
