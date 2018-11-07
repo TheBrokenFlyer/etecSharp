@@ -1,0 +1,7 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\Cmb.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\Cmb.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\Cmb.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\Cmb.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\Cmb.pdb
