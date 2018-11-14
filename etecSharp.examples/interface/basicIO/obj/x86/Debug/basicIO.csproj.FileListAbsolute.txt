@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\bin\Debug\basicIO.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\bin\Debug\basicIO.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\obj\x86\Debug\basicIO.Form1.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\obj\x86\Debug\basicIO.Properties.Resources.resources
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\obj\x86\Debug\basicIO.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\obj\x86\Debug\basicIO.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.examples\interface\basicIO\obj\x86\Debug\basicIO.pdb

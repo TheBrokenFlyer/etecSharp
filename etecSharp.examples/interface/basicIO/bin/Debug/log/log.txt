@@ -1,0 +1,5 @@
+[carregados departamentos] LOG: 01/01/0001 00:00:00
+[Aberto] LOG: 01/01/0001 00:00:00
+[login] LOG: 01/01/0001 00:00:00
+[login] LOG: 01/01/0001 00:00:00
+[cadastro] LOG: 01/01/0001 00:00:00
