@@ -1,0 +1,4 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\controller\bin\Debug\controller.dll
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\controller\bin\Debug\controller.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\controller\obj\Debug\controller.dll
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\controller\obj\Debug\controller.pdb

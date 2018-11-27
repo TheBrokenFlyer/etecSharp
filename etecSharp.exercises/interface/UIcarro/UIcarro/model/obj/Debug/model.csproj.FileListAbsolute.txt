@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\model.dll
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\model.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\obj\Debug\model.dll
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\obj\Debug\model.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\UIcarro.exe
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\controller.dll
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\UIcarro.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\bin\Debug\controller.pdb
+C:\Users\Aluno\Desktop\etecSharp\etecSharp.exercises\interface\UIcarro\UIcarro\model\obj\Debug\model.csprojResolveAssemblyReference.cache
